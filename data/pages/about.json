@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "25 years of",
+    "titleAccent": "delivered promises",
+    "subtitle": "Extraordinary Reach. Extraordinary Results."
+  },
+  "story": {
+    "title": "Our story",
+    "body": "At Deep Group, we believe in delivering what we promise. Our priorities are quality residential spaces within budget, well-planned layouts, good amenities and on-time possession. It's our passion for quality that has earned us our great reputation."
+  },
+  "pillars": [
+    { "icon": "gem", "title": "Quality within budget", "text": "Homes families can afford and be proud of" },
+    { "icon": "maximize", "title": "Well-planned layouts", "text": "Vastu-conscious, well-ventilated homes" },
+    { "icon": "sparkles", "title": "Good amenities", "text": "Rooftop lawns, gyms, play areas and more" },
+    { "icon": "calendar-check", "title": "On-time possession", "text": "Our record across 25 delivered projects" }
+  ],
+  "compliance": [
+    { "icon": "badge-check", "title": "MahaRERA", "text": "Current projects registered" },
+    { "icon": "handshake", "title": "Redevelopment", "text": "Trusted by housing societies" }
+  ]
+}

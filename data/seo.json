@@ -1,0 +1,16 @@
+{
+  "titleTemplate": "%s | Deep Group",
+  "defaultTitle": "Deep Group: Flats & Industrial Hubs in Nalasopara, Virar & Vasai",
+  "defaultDescription": "25 years of success and 25 delivered projects. 1 & 2 BHK homes near Nallasopara, Virar and Vasai Road stations, and Sky Industrial Hub on NH 48.",
+  "pages": {
+    "/about-us": { "title": "About Deep Group", "description": "25 years of delivered promises in Nallasopara, Virar and Vasai: quality homes within budget, well-planned layouts, good amenities and on-time possession." },
+    "/projects": { "title": "Projects in Nalasopara, Virar & Vasai", "description": "Browse Deep Group's current residential and industrial projects near Nallasopara, Virar and Vasai Road stations." },
+    "/redevelopment": { "title": "Society Redevelopment in Nalasopara & Vasai", "description": "Deep Group is rebuilding Sai Nidhi CHS and Laxmiben Chheda CHSL. Transparent society redevelopment under Section 79A." },
+    "/career": { "title": "Careers at Deep Group", "description": "Open roles in projects, sales, marketing and finance at Deep Group, Nallasopara." },
+    "/channel-partner": { "title": "Channel Partner Programme: Sell Projects in Nalasopara & Vasai", "description": "MahaRERA agents: register as a Deep Group channel partner for site-visit support, marketing collateral and a dedicated relationship manager." },
+    "/contact-us": { "title": "Contact Deep Group", "description": "Visit the Deep Group office at Deep Sagar Apartment, Sainath Nagar, Tulinj, Nallasopara East, or call +91 89563 51941." },
+    "/privacy-policy": { "title": "Privacy Policy", "description": "How Deep Group collects, uses and protects your personal data under the DPDP Act 2023." },
+    "/terms-and-conditions": { "title": "Terms & Conditions", "description": "Terms of use for the Deep Group website." },
+    "/disclaimer": { "title": "RERA Disclaimer", "description": "RERA and advertising disclaimer for Deep Group projects." }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "sky-industrial-hub",
+  "name": "Sky Industrial Hub",
+  "tagline": "Where the next era of business begins",
+  "description": "A 4.5-acre planned industrial development on NH 48, with flexible sizes, 20 ft ground-floor height and goods lifts.",
+  "category": "industrial",
+  "subType": "galas",
+  "status": "upcoming",
+  "featured": true,
+  "order": 5,
+  "station": "mira-road",
+  "location": {
+    "address": "Beside Hotel Fountain, NH 48 (Mumbai–Ahmedabad Highway)",
+    "locality": "Hotel Fountain, NH 48",
+    "city": "Thane",
+    "state": "Maharashtra",
+    "mapQuery": "Hotel Fountain Ghodbunder NH 48"
+  },
+  "units": [{ "label": "Industrial gala", "carpetAreaSqft": [5000, 17000] }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "landParcelAcres": 4.5,
+  "ceilingHeightFt": 20,
+  "highlights": ["4.5-acre development", "5,000 – 17,000 sq ft options", "NH 48 access"],
+  "amenities": ["rcc-structure", "ground-height", "wide-passage", "wide-roads", "goods-lift", "led-lights", "anodized-windows", "natural-light", "security", "loan-assistance"],
+  "connectivity": [
+    { "place": "Hotel Fountain", "distance": "0 km", "type": "road" },
+    { "place": "Dahisar toll plaza", "distance": "4 km", "type": "road" },
+    { "place": "Royal Garden", "distance": "6 km", "type": "road" },
+    { "place": "Lodha Dhaam", "distance": "8 km", "type": "road" },
+    { "place": "Ramdev Studio", "distance": "8 km", "type": "road" },
+    { "place": "Chinchoti Naka", "distance": "12 km", "type": "road" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/sky-industrial-hub/cover.jpg", "alt": "Sky Industrial Hub building on NH 48" },
+    "gallery": [
+      { "src": "/images/projects/sky-industrial-hub/gate.jpg", "alt": "Sky Industrial Hub entrance gate", "kind": "exterior" },
+      { "src": "/images/projects/sky-industrial-hub/warehouse.jpg", "alt": "Sky Industrial Hub warehouse blocks", "kind": "exterior" }
+    ],
+    "floorPlans": [
+      { "src": "/images/projects/sky-industrial-hub/floor-plan.jpg", "alt": "Buildings 1 and 2 gala floor plans", "label": "Gala plans" }
+    ]
+  },
+  "brochure": "/brochures/sky-industrial-hub.pdf",
+  "faqs": [
+    { "q": "What sizes are available?", "a": "Flexible options from 5,000 to 17,000 sq ft." },
+    { "q": "Where is Sky Industrial Hub?", "a": "On NH 48 beside Hotel Fountain, about 4 km from the Dahisar toll plaza." },
+    { "q": "Is loan assistance available?", "a": "Yes, loan assistance is available." }
+  ],
+  "seo": {
+    "title": "Sky Industrial Hub: Industrial Galas on NH 48 near Dahisar",
+    "description": "A 4.5-acre industrial development beside Hotel Fountain on NH 48: 5,000–17,000 sq ft options, 20 ft ground-floor height, goods lifts."
+  },
+  "publishedAt": "2026-09-29",
+  "updatedAt": "2026-09-29"
+}

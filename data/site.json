@@ -1,0 +1,43 @@
+{
+  "name": "Deep Group",
+  "legalName": "Deep Builder & Developers",
+  "tagline": "Extraordinary Reach. Extraordinary Results",
+  "url": "https://www.deepgroups.in",
+  "logo": "/logo-full.png",
+  "phone": "+91 89563 51941",
+  "phoneHref": "+918956351941",
+  "altPhone": "+91 89563 51942",
+  "whatsapp": "918956351941",
+  "email": "sales@deepgroups.in",
+  "cpDesk": { "phone": "+91 89563 51942", "phoneHref": "+918956351942", "email": "partners@deepgroups.in" },
+  "careersEmail": "careers@deepgroups.in",
+  "foundingYear": "2000",
+  "yearsOfSuccess": 25,
+  "hours": "Mon–Sun, 10:00 am – 7:00 pm",
+  "openingHours": "Mo-Su 10:00-19:00",
+  "headOffice": {
+    "label": "Head office",
+    "address": {
+      "streetAddress": "Shop No. 3, Deep Sagar Apartment, Sainath Nagar, Tulinj",
+      "addressLocality": "Nallasopara East",
+      "addressRegion": "Maharashtra",
+      "postalCode": "401209"
+    },
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Deep+Sagar+Apartment+Sainath+Nagar+Tulinj+Nallasopara+East+401209"
+  },
+  "offices": [
+    {
+      "label": "Head office, Nallasopara",
+      "address": "Shop No. 3, Deep Sagar Apartment, Sainath Nagar, Tulinj, Nallasopara (East) 401209",
+      "phone": "+91 89563 51941",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Deep+Sagar+Apartment+Sainath+Nagar+Tulinj+Nallasopara+East+401209"
+    }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/deepgroup",
+    "facebook": "https://www.facebook.com/deepgroup",
+    "youtube": "https://www.youtube.com/@deepgroup",
+    "linkedin": "https://www.linkedin.com/company/deepgroup"
+  },
+  "defaultOgImage": "/images/hero/hero.jpg"
+}

@@ -1,0 +1,31 @@
+{
+  "main": [
+    { "label": "Home", "href": "/" },
+    { "label": "About us", "href": "/about-us" },
+    { "label": "Projects", "href": "/projects", "dropdown": true },
+    { "label": "Redevelopment", "href": "/redevelopment" },
+    { "label": "Channel partners", "href": "/channel-partner", "collapse": true },
+    { "label": "Career", "href": "/career", "collapse": true },
+    { "label": "Contact us", "href": "/contact-us" }
+  ],
+  "footer": [
+    {
+      "title": "Company",
+      "links": [
+        { "label": "About us", "href": "/about-us" },
+        { "label": "Redevelopment", "href": "/redevelopment" },
+        { "label": "Channel partners", "href": "/channel-partner" },
+        { "label": "Career", "href": "/career" },
+        { "label": "Contact us", "href": "/contact-us" }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        { "label": "Privacy policy", "href": "/privacy-policy" },
+        { "label": "Terms & conditions", "href": "/terms-and-conditions" },
+        { "label": "RERA disclaimer", "href": "/disclaimer" }
+      ]
+    }
+  ]
+}

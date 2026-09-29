@@ -1,0 +1,21 @@
+{
+  "hero": {
+    "title": "Build your career",
+    "titleAccent": "with us",
+    "subtitle": "Join a team that shapes skylines and the lives beneath them."
+  },
+  "culture": [
+    { "icon": "users", "title": "People first", "text": "A close-knit, respectful team" },
+    { "icon": "trending-up", "title": "Grow fast", "text": "Real responsibility from day one" },
+    { "icon": "lightbulb", "title": "Ideas welcome", "text": "Every voice shapes our work" }
+  ],
+  "perks": [
+    { "icon": "heart-pulse", "label": "Health insurance" },
+    { "icon": "graduation-cap", "label": "Learning budget" },
+    { "icon": "calendar-heart", "label": "Paid leave" },
+    { "icon": "trophy", "label": "Performance bonus" },
+    { "icon": "bus", "label": "Site transport" },
+    { "icon": "cake", "label": "Team celebrations" }
+  ],
+  "applyNote": "Don't see a fit? Send us your résumé anyway."
+}

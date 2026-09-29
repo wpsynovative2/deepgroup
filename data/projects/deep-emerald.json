@@ -1,0 +1,56 @@
+{
+  "slug": "deep-emerald",
+  "name": "Deep Emerald",
+  "tagline": "Not just a home, a precious legacy",
+  "description": "Heritage-style residences near Patankar Road, Nalasopara West, a 5-minute walk from the station, with shops on the ground floor.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "upcoming",
+  "featured": true,
+  "order": 7,
+  "station": "nallasopara",
+  "location": {
+    "address": "Near Patankar Road",
+    "locality": "Nalasopara West",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "mapQuery": "Patankar Road Nalasopara West",
+    "distanceFromStation": "5 min walk"
+  },
+  "units": [],
+  "price": { "display": "Price on request", "onRequest": true },
+  "highlights": ["5 min walk from station", "Rooftop star gazing point", "Shops on the ground floor"],
+  "amenities": ["kids-play-area", "open-gym", "yoga-deck", "pergola", "star-gazing", "sitouts", "jogging-track", "indoor-games", "lift", "stack-parking", "power-backup", "shops"],
+  "specifications": [
+    { "title": "Interiors", "icon": "sofa", "items": ["POP false ceiling in living room", "Vitrified floor tiles", "AC provisions"] },
+    { "title": "Kitchen", "icon": "cooking-pot", "items": ["Semi-modular kitchen"] },
+    { "title": "Build", "icon": "building", "items": ["Powder-coated aluminium windows", "Branded electrical switches", "Automatic lift"] },
+    { "title": "Common areas", "icon": "zap", "items": ["Power backup for lift, garden, parking & common areas", "Stack parking"] }
+  ],
+  "connectivity": [
+    { "place": "Nallasopara railway station", "distance": "5 min walk", "type": "transport" },
+    { "place": "Vasai Virar Municipality Hospital", "distance": "1 min", "type": "health" },
+    { "place": "Titan Multispeciality Hospital", "distance": "4 min", "type": "health" },
+    { "place": "Ryan International School", "distance": "1 min", "type": "education" },
+    { "place": "St. Francis De Sales High School", "distance": "2 min", "type": "education" },
+    { "place": "Nana Nani Park", "distance": "2 min", "type": "park" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/deep-emerald/cover.jpg", "alt": "Deep Emerald heritage-style building in Nalasopara West" },
+    "gallery": [
+      { "src": "/images/projects/deep-emerald/rooftop.jpg", "alt": "Deep Emerald rooftop with kids' play area, yoga zone and star gazing point", "kind": "amenity" },
+      { "src": "/images/projects/deep-emerald/features.jpg", "alt": "Deep Emerald home features", "kind": "interior" }
+    ],
+    "floorPlans": []
+  },
+  "brochure": "/brochures/deep-emerald.pdf",
+  "faqs": [
+    { "q": "Where is Deep Emerald?", "a": "Near Patankar Road in Nalasopara West, about a 5-minute walk from Nallasopara station." }
+  ],
+  "seo": {
+    "title": "Deep Emerald: New Homes near Nallasopara Station (West)",
+    "description": "Heritage-style homes a 5-minute walk from Nallasopara station with rooftop open gym, yoga zone and star gazing point. Register your interest."
+  },
+  "publishedAt": "2025-08-06",
+  "updatedAt": "2026-09-29"
+}

@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "title": "Redevelopment for",
+    "titleAccent": "housing societies",
+    "subtitle": "A new building, modern amenities and a secure future for every member.",
+    "cta": "Request a feasibility meeting"
+  },
+  "benefits": [
+    { "icon": "maximize", "title": "Better homes", "text": "New, well-planned flats for every member" },
+    { "icon": "sparkles", "title": "Modern amenities", "text": "Lifts, rooftop lawns, gym and play areas" },
+    { "icon": "car", "title": "Parking", "text": "Planned parking for members" },
+    { "icon": "shield-check", "title": "Safer structure", "text": "A new building to current standards" },
+    { "icon": "store", "title": "Shops on the ground floor", "text": "Street-facing retail that adds value" },
+    { "icon": "home", "title": "Same locality", "text": "Stay close to the neighbourhood you know" }
+  ],
+  "receive": [
+    { "value": "New", "label": "Building for every member" },
+    { "value": "Modern", "label": "Lifts & amenities" },
+    { "value": "MahaRERA", "label": "Registered projects" },
+    { "value": "25 yrs", "label": "Of delivered promises" }
+  ],
+  "process": [
+    { "title": "Society resolution", "text": "General body passes resolution" },
+    { "title": "Feasibility & PMC", "text": "Appoint PMC, study feasibility" },
+    { "title": "Developer selection", "text": "Tender and transparent selection" },
+    { "title": "Agreement", "text": "Development agreement signed" },
+    { "title": "Approvals", "text": "Plans approved by authorities" },
+    { "title": "Construction", "text": "Members vacate, we build" },
+    { "title": "Possession", "text": "Move into your new home" }
+  ],
+  "processNote": "Follows the Maharashtra Government's Section 79A guidelines for cooperative housing societies.",
+  "transparency": [
+    { "icon": "message-square", "title": "Regular updates", "text": "Progress shared with the committee" },
+    { "icon": "badge-check", "title": "MahaRERA registered", "text": "Every redevelopment registered" },
+    { "icon": "scale", "title": "Clear agreements", "text": "Terms documented upfront" }
+  ],
+  "completed": [
+    { "name": "Deep Crown", "society": "Sai Nidhi CHS Ltd.", "location": "Chakradhar Nagar, Nalasopara West", "status": "Ongoing", "slug": "deep-crown", "image": "/images/projects/deep-crown/cover.jpg" },
+    { "name": "Deep Landmark", "society": "Laxmiben Chheda CHSL", "location": "Gala Nagar, Nalasopara East", "status": "Ongoing", "slug": "deep-landmark", "image": "/images/projects/deep-landmark/cover.jpg" }
+  ]
+}

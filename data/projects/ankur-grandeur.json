@@ -1,0 +1,68 @@
+{
+  "slug": "ankur-grandeur",
+  "name": "Ankur Grandeur",
+  "tagline": "1 BHK residences 6 minutes from Virar station",
+  "description": "A 21-storey tower on the Virar–Nalasopara link road with a rooftop sky lawn and shops on the podium.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "ongoing",
+  "featured": true,
+  "order": 4,
+  "station": "virar",
+  "location": {
+    "address": "Survey No. 34/B/6 & 78/B/2, Virar–Nalasopara 90 Feet Link Road",
+    "locality": "Moregaon, Nalasopara East",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "pincode": "401209",
+    "mapQuery": "Ankur Grandeur Moregaon Nalasopara East 401209",
+    "distanceFromStation": "6 min"
+  },
+  "units": [{ "label": "1 BHK", "carpetAreaSqft": [348, 535] }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "floors": "21 floors",
+  "rera": [{ "number": "P99000033095", "phase": "Building 3" }],
+  "highlights": ["Rooftop sky lawn", "Shops on the podium", "6 min to Virar station"],
+  "amenities": ["kids-play-area", "sky-lawn", "gym", "jogging-track", "yoga-deck", "board-game", "multipurpose-area", "pergola", "shops"],
+  "specifications": [
+    { "title": "Living room", "icon": "sofa", "items": ["Vitrified 32\" × 32\" flooring", "Laminated main door, 2-hour fire rated", "Anodized aluminium sliding windows with mosquito net", "Anchor Roma switches, AC outlet provision"] },
+    { "title": "Kitchen", "icon": "cooking-pot", "items": ["Modular kitchen", "Granite platform with stainless steel sink", "Dado tiles on wall", "Water filter & washing machine points"] },
+    { "title": "Bedroom", "icon": "bed", "items": ["Vitrified 32\" × 32\" flooring", "Laminated door with branded brass fittings", "Premium plastic paint with ISI mark", "AC outlet provision"] },
+    { "title": "Bathroom", "icon": "bath", "items": ["Glazed ceramic 24\" × 12\" tiles", "Granite door frame", "Jaquar plumbing fittings", "Inverter point in bathroom loft"] }
+  ],
+  "connectivity": [
+    { "place": "Virar railway station", "distance": "6 min", "type": "transport" },
+    { "place": "Nalasopara railway station", "distance": "11 min", "type": "transport" },
+    { "place": "East–West flyover", "distance": "3 min", "type": "road" },
+    { "place": "Western Express Highway", "distance": "24 min", "type": "road" },
+    { "place": "Navodaya Children Hospital", "distance": "2 min", "type": "health" },
+    { "place": "Vajreshwari Hospital", "distance": "2 min", "type": "health" },
+    { "place": "Holy Spirit School", "distance": "3 min", "type": "education" },
+    { "place": "D-Mart", "distance": "3 min", "type": "shopping" },
+    { "place": "The Capital Mall", "distance": "14 min", "type": "shopping" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/ankur-grandeur/cover.jpg", "alt": "Ankur Grandeur tower with shops on the podium, Nalasopara East" },
+    "gallery": [
+      { "src": "/images/projects/ankur-grandeur/rooftop.jpg", "alt": "Ankur Grandeur rooftop amenities: kids play area, sky lawn, pergola and fitness area", "kind": "amenity" },
+      { "src": "/images/projects/ankur-grandeur/layout.jpg", "alt": "Ankur Grandeur plot layout", "kind": "layout" },
+      { "src": "/images/projects/ankur-grandeur/cover.jpg", "alt": "Ankur Grandeur tower", "kind": "exterior" }
+    ],
+    "floorPlans": [
+      { "src": "/images/projects/ankur-grandeur/plan-1bhk.jpg", "alt": "1 BHK typical floor plan, Building 3 Wing A, 348–535 sq ft RERA carpet", "label": "1 BHK" }
+    ]
+  },
+  "brochure": "/brochures/ankur-grandeur.pdf",
+  "bookingPhone": "+91 77770 02042",
+  "faqs": [
+    { "q": "Is Ankur Grandeur RERA registered?", "a": "Yes. MahaRERA No. P99000033095." },
+    { "q": "How far is Ankur Grandeur from Virar station?", "a": "About 6 minutes by road; Nalasopara station is about 11 minutes away." },
+    { "q": "What flat sizes are available?", "a": "1 BHK homes from about 348 to 535 sq ft RERA carpet area." }
+  ],
+  "seo": {
+    "title": "Ankur Grandeur: 1 BHK Flats in Moregaon, Nalasopara East",
+    "description": "MahaRERA-registered 1 BHK flats on the Virar–Nalasopara link road, 6 min from Virar station. Rooftop sky lawn, fitness area and kids' play area."
+  },
+  "publishedAt": "2025-06-11",
+  "updatedAt": "2026-09-29"
+}

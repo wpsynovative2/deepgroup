@@ -1,0 +1,56 @@
+{
+  "slug": "deep-sky",
+  "name": "Deep Sky",
+  "tagline": "23-storey high-rise residences in Yashwant Smart City, Vasai East",
+  "description": "High-rise 1 & 2 BHK homes with a podium garden, gazebo, water fountain and a hi-tech gym.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "ongoing",
+  "featured": true,
+  "order": 1,
+  "station": "vasai-road",
+  "location": {
+    "address": "Survey No. 88-1A, 89-2, 89-4, Village Gokhiware, Yashwant Smart City",
+    "locality": "Yashwant Smart City, Vasai East",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "pincode": "401208",
+    "mapQuery": "Yashwant Smart City Gokhiware Vasai East 401208"
+  },
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "floors": "23 storeys",
+  "highlights": ["23-storey towers", "Podium garden & gazebo", "EV charging points"],
+  "amenities": ["podium-garden", "kids-play-area", "gym", "yoga-deck", "jogging-track", "gazebo", "water-fountain", "flower-plantation", "senior-citizen-area", "parking", "ev-charging", "cctv", "modular-kitchen", "lobby", "intercom", "lift", "tree-plantation"],
+  "specifications": [
+    { "title": "Living & bedroom", "icon": "sofa", "items": ["Vitrified flooring", "Decorative false ceiling with POP cornice", "French windows with chajja"] },
+    { "title": "Kitchen", "icon": "cooking-pot", "items": ["Granite platform with SS sink", "Designer tiles above platform", "Modular kitchen"] },
+    { "title": "Washroom", "icon": "bath", "items": ["Designer bathroom tiles", "Anti-skid flooring", "Concealed plumbing", "Premium CP fittings & branded sanitaryware"] },
+    { "title": "Windows & doors", "icon": "door-open", "items": ["Powder-coated sliding windows with railing", "Granite sills", "Wooden doors, granite / wooden frames"] },
+    { "title": "Electrical", "icon": "zap", "items": ["Concealed copper wiring", "Branded modular switches", "MCB safety features"] }
+  ],
+  "connectivity": [],
+  "images": {
+    "cover": { "src": "/images/projects/deep-sky/cover.jpg", "alt": "Deep Sky 23-storey residential tower, Vasai East" },
+    "gallery": [
+      { "src": "/images/projects/deep-sky/towers.jpg", "alt": "Deep Sky towers at sunset", "kind": "exterior" },
+      { "src": "/images/projects/deep-sky/aerial.jpg", "alt": "Aerial view of Deep Sky towers", "kind": "exterior" }
+    ],
+    "floorPlans": [
+      { "src": "/images/projects/deep-sky/plan-1bhk.jpg", "alt": "1 BHK artistic view with French windows", "label": "1 BHK" },
+      { "src": "/images/projects/deep-sky/plan-2bhk.jpg", "alt": "2 BHK artistic view", "label": "2 BHK" }
+    ]
+  },
+  "brochure": "/brochures/deep-sky.pdf",
+  "bookingPhone": "+91 80952 21144",
+  "faqs": [
+    { "q": "Where is Deep Sky?", "a": "Village Gokhiware, Yashwant Smart City, Vasai East 401208." },
+    { "q": "How tall are the towers?", "a": "23 storeys, with podium garden, gazebo and hi-tech gym." }
+  ],
+  "seo": {
+    "title": "Deep Sky: 1 & 2 BHK High-Rise Flats in Vasai East",
+    "description": "23-storey high-rise 1 & 2 BHK residences in Yashwant Smart City, Vasai East. Podium garden, gazebo, gym and EV charging points."
+  },
+  "publishedAt": "2025-06-11",
+  "updatedAt": "2026-09-29"
+}

@@ -1,0 +1,17 @@
+[
+  { "slug": "virar", "name": "Virar", "line": "Western", "order": 1,
+    "intro": "Virar is where Western line fast locals begin, so you always start with a seat. Ankur Grandeur sits on the Virar–Nalasopara 90 Feet Link Road, about 6 minutes from Virar station.",
+    "seo": { "title": "Flats near Virar Station", "description": "MahaRERA-registered 1 BHK homes on the Virar–Nalasopara link road by Deep Group, 6 minutes from Virar station." } },
+  { "slug": "nallasopara", "name": "Nallasopara", "line": "Western", "order": 2,
+    "intro": "Nallasopara is Deep Group's home ground: 22 of our delivered residential projects are here. Our current projects are a short walk from Nallasopara station, on both the East and West sides.",
+    "seo": { "title": "Flats near Nallasopara Station", "description": "1 & 2 BHK homes a short walk from Nallasopara station by Deep Group: Deep Crown, Deep Emerald and Deep Landmark." } },
+  { "slug": "vasai-road", "name": "Vasai Road", "line": "Western", "order": 3,
+    "intro": "Vasai Road links the Western line with the Diva–Vasai route to Thane. Our Vasai East projects sit in Evershine City and Yashwant Smart City, close to malls, schools and the Mumbai–Ahmedabad highway.",
+    "seo": { "title": "Flats in Vasai East near Vasai Road Station", "description": "1 & 2 BHK homes in Evershine City and Yashwant Smart City, Vasai East, by Deep Group." } },
+  { "slug": "naigaon", "name": "Naigaon", "line": "Western", "order": 4 },
+  { "slug": "bhayandar", "name": "Bhayandar", "line": "Western", "order": 5 },
+  { "slug": "mira-road", "name": "Mira Road", "line": "Western", "order": 6,
+    "intro": "Sky Industrial Hub is on NH 48 beside Hotel Fountain, 4 km from the Dahisar toll plaza, with quick road access to Mumbai, Thane and the Mumbai–Ahmedabad highway.",
+    "seo": { "title": "Industrial Galas & Plots on NH 48 near Mira Road", "description": "Sky Industrial Hub by Deep Group: a 4.5-acre industrial development on NH 48 beside Hotel Fountain." } },
+  { "slug": "boisar", "name": "Boisar", "line": "Western", "order": 7 }
+]

@@ -1,0 +1,63 @@
+{
+  "slug": "mahavir-enclave",
+  "name": "Mahavir Enclave",
+  "tagline": "City-centric 1 & 2 BHK residences in Evershine City, Vasai East",
+  "description": "Live connected: malls, hospitals and schools within 2 minutes, with a terrace sky walk and outdoor gym.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "ongoing",
+  "featured": true,
+  "order": 6,
+  "station": "vasai-road",
+  "location": {
+    "address": "Near Carnival Cinema, Evershine City",
+    "locality": "Evershine City, Vasai East",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "mapQuery": "Carnival Cinema Evershine City Vasai East",
+    "distanceFromStation": "10 min"
+  },
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "highlights": ["2 min to Dreams The Mall", "Vastu-compliant flats", "Terrace sky walk"],
+  "amenities": ["sky-walk", "kids-play-area", "board-game", "swing", "sitouts", "open-gym", "yoga-deck", "jogging-track", "cctv", "power-backup", "stack-parking", "lift"],
+  "specifications": [
+    { "title": "Interiors", "icon": "sofa", "items": ["POP false ceiling in living room", "Vitrified floor tiles", "AC provisions"] },
+    { "title": "Kitchen & bath", "icon": "cooking-pot", "items": ["Semi-modular kitchen", "Premium sanitaryware", "Concealed plumbing"] },
+    { "title": "Build", "icon": "building", "items": ["Powder-coated aluminium windows", "Branded electrical switches", "Automatic lift"] },
+    { "title": "Safety & services", "icon": "shield", "items": ["CCTV surveillance", "Power backup for lift, garden, parking & common areas", "Stack parking"] }
+  ],
+  "connectivity": [
+    { "place": "Vasai Road railway station", "distance": "10 min", "type": "transport" },
+    { "place": "Mumbai–Ahmedabad Highway", "distance": "15 min", "type": "road" },
+    { "place": "Carnival Cinema", "distance": "2 min", "type": "shopping" },
+    { "place": "Dreams The Mall", "distance": "2 min", "type": "shopping" },
+    { "place": "D-Mart", "distance": "10 min", "type": "shopping" },
+    { "place": "Evershine M.S. Hospital", "distance": "2 min", "type": "health" },
+    { "place": "J.B. Ludhani High School", "distance": "2 min", "type": "education" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Aerial view of Mahavir Enclave with rooftop amenities, Vasai East" },
+    "gallery": [
+      { "src": "/images/projects/mahavir-enclave/lifestyle.jpg", "alt": "Mahavir Enclave lifestyle features", "kind": "amenity" },
+      { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Mahavir Enclave aerial view", "kind": "exterior" }
+    ],
+    "floorPlans": [
+      { "src": "/images/projects/mahavir-enclave/plan-1bhk.jpg", "alt": "1 BHK, living 9'0\" × 14'0\", bedroom 9'0\" × 9'0\"", "label": "1 BHK" },
+      { "src": "/images/projects/mahavir-enclave/plan-2bhk.jpg", "alt": "2 BHK, living 9'0\" × 15'0\", two bedrooms", "label": "2 BHK" },
+      { "src": "/images/projects/mahavir-enclave/typical-floor.jpg", "alt": "Typical floor plan, Vastu-compliant layout", "label": "Typical floor" }
+    ]
+  },
+  "brochure": "/brochures/mahavir-enclave.pdf",
+  "bookingPhone": "+91 77570 17592",
+  "faqs": [
+    { "q": "Where is Mahavir Enclave?", "a": "Near Carnival Cinema in Evershine City, Vasai East, about 10 minutes from Vasai Road station." },
+    { "q": "What configurations are available?", "a": "1 BHK and 2 BHK homes." }
+  ],
+  "seo": {
+    "title": "Mahavir Enclave: 1 & 2 BHK Flats in Evershine City, Vasai East",
+    "description": "City-centric 1 & 2 BHK flats near Carnival Cinema, Evershine City, Vasai East. Terrace sky walk, outdoor gym and kids' play area."
+  },
+  "publishedAt": "2024-08-28",
+  "updatedAt": "2026-09-29"
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "deep-landmark",
+  "name": "Deep Landmark",
+  "tagline": "Big carpet-area 2 BHK and budget 1 BHK flats, 900 m from the station",
+  "description": "Redefining Nallasopara: a landmark tower at Gala Nagar Circle with shops, tower parking and a rooftop full of lifestyle features.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "ongoing",
+  "featured": true,
+  "order": 2,
+  "station": "nallasopara",
+  "redevelopmentOf": "Laxmiben Chheda CHSL",
+  "location": {
+    "address": "Laxmiben Chheda CHSL, Gala Nagar Circle, opp. Pancham School, Achole Road",
+    "locality": "Gala Nagar, Nalasopara East",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "mapQuery": "Gala Nagar Circle Achole Road Nallasopara East",
+    "distanceFromStation": "900 m"
+  },
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "rera": [{ "number": "P99000055306", "phase": "Project", "qr": "/images/projects/deep-landmark/rera-qr.jpg" }],
+  "highlights": ["900 m from station", "Big carpet-area 2 BHK", "Tower parking"],
+  "amenities": ["open-gym", "kids-play-area", "yoga-deck", "indoor-games", "pergola", "star-gazing", "sitouts", "jogging-track", "cctv", "intercom", "modular-kitchen", "tower-parking", "lobby", "lift", "shops"],
+  "connectivity": [
+    { "place": "Nallasopara railway station", "distance": "900 m", "type": "transport" },
+    { "place": "Vasai Link Road", "distance": "1.2 km", "type": "road" },
+    { "place": "Western Express Highway", "distance": "11 km", "type": "road" },
+    { "place": "Chandresh Lodha High School", "distance": "40 m", "type": "education" },
+    { "place": "Navneet Hospital", "distance": "450 m", "type": "health" },
+    { "place": "Achole Hospital", "distance": "800 m", "type": "health" },
+    { "place": "The Capital Mall", "distance": "5 min", "type": "shopping" },
+    { "place": "D-Mart", "distance": "2.5 km", "type": "shopping" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/deep-landmark/cover.jpg", "alt": "Deep Landmark towers at Gala Nagar, Nalasopara East" },
+    "gallery": [
+      { "src": "/images/projects/deep-landmark/lifestyle.jpg", "alt": "Deep Landmark lifestyle features: open gym, kids' play area, yoga zone", "kind": "amenity" },
+      { "src": "/images/projects/deep-landmark/features.jpg", "alt": "Deep Landmark home features", "kind": "interior" }
+    ],
+    "floorPlans": []
+  },
+  "brochure": "/brochures/deep-landmark.pdf",
+  "bookingPhone": "+91 70261 16688",
+  "faqs": [
+    { "q": "Is Deep Landmark RERA registered?", "a": "Yes. MahaRERA No. P99000055306." },
+    { "q": "What configurations are available?", "a": "Big carpet-area 2 BHK and budget 1 BHK flats." },
+    { "q": "How far is it from Nallasopara station?", "a": "About 900 m." }
+  ],
+  "seo": {
+    "title": "Deep Landmark: 1 & 2 BHK Flats at Gala Nagar, Nalasopara East",
+    "description": "MahaRERA-registered 1 & 2 BHK flats 900 m from Nallasopara station. Open gym, indoor games, star gazing point and tower parking."
+  },
+  "publishedAt": "2025-06-11",
+  "updatedAt": "2026-09-29"
+}

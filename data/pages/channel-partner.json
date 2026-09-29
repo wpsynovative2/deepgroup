@@ -1,0 +1,37 @@
+{
+  "hero": {
+    "title": "Sell Deep Group projects as a",
+    "titleAccent": "channel partner",
+    "subtitle": "Fast payouts, dedicated support and projects your clients will love.",
+    "cta": "Register as a partner",
+    "secondaryCta": "Call the CP desk"
+  },
+  "benefits": [
+    { "icon": "wallet", "title": "Fast payouts", "text": "Brokerage within 30 days of registration" },
+    { "icon": "user-check", "title": "Dedicated RM", "text": "One relationship manager for you" },
+    { "icon": "car", "title": "Site-visit support", "text": "Free client pickup and drop" },
+    { "icon": "image", "title": "Marketing kit", "text": "Creatives, brochures and videos" },
+    { "icon": "trophy", "title": "Incentives", "text": "Quarterly slabs and CP meets" },
+    { "icon": "shield-check", "title": "Fair tagging", "text": "Transparent client ownership" }
+  ],
+  "process": [
+    { "title": "Register", "text": "Fill the form below" },
+    { "title": "Verification", "text": "Documents checked" },
+    { "title": "Empanelment", "text": "Get your CP code" },
+    { "title": "Tag client", "text": "Register your lead" },
+    { "title": "Site visit", "text": "We host your client" },
+    { "title": "Booking", "text": "Client books a unit" },
+    { "title": "Payout", "text": "Brokerage released" }
+  ],
+  "policies": [
+    { "q": "Client tagging", "a": "A client is tagged to you when you register them through the CP desk before their first site visit. The tag stays valid for 60 days from the visit." },
+    { "q": "Valid site visit", "a": "The visit counts when your client visits with you or with your CP code, and signs the visit register at the site." },
+    { "q": "Payout milestones", "a": "Brokerage is released after registration of the agreement for sale and receipt of 10% of the agreement value." },
+    { "q": "MahaRERA registration", "a": "All partners must hold a valid MahaRERA agent registration. Payouts are made only to registered agents." }
+  ],
+  "faqs": [
+    { "q": "Who can become a channel partner?", "a": "Any individual or firm with a valid MahaRERA agent registration." },
+    { "q": "Is there a registration fee?", "a": "No. Registration is free." },
+    { "q": "How long does empanelment take?", "a": "Usually 3–5 working days after document verification." }
+  ]
+}

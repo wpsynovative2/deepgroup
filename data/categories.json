@@ -1,0 +1,5 @@
+[
+  { "slug": "residential", "title": "Residential", "accent": "homes", "blurb": "1 & 2 BHK homes with rooftop amenities.", "icon": "home", "comingSoon": false },
+  { "slug": "commercial", "title": "Commercial", "accent": "spaces", "blurb": "Shops and offices near the station.", "icon": "store", "comingSoon": true },
+  { "slug": "industrial", "title": "Industrial", "accent": "hubs", "blurb": "Galas and plots built for business.", "icon": "factory", "comingSoon": false }
+]

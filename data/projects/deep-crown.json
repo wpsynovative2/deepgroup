@@ -1,0 +1,61 @@
+{
+  "slug": "deep-crown",
+  "name": "Deep Crown",
+  "tagline": "Premium residences a 5-minute walk from Nallasopara station",
+  "description": "Aapke sapno ka sahi address: premium homes with rooftop amenities in Chakradhar Nagar, Nalasopara West.",
+  "category": "residential",
+  "subType": "apartments",
+  "status": "ongoing",
+  "featured": true,
+  "order": 3,
+  "station": "nallasopara",
+  "redevelopmentOf": "Sai Nidhi CHS Ltd.",
+  "location": {
+    "address": "Sai Nidhi CHS Ltd., Chakradhar Nagar",
+    "locality": "Chakradhar Nagar, Nalasopara West",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "mapQuery": "Chakradhar Nagar Nalasopara West",
+    "distanceFromStation": "5 min walk"
+  },
+  "units": [],
+  "price": { "display": "Price on request", "onRequest": true },
+  "rera": [{ "number": "P99000054885", "phase": "Project", "qr": "/images/projects/deep-crown/rera-qr.jpg" }],
+  "highlights": ["5 min walk from station", "Rooftop amenities", "Shops on the ground floor"],
+  "amenities": ["yoga-deck", "sitouts", "jogging-track", "pergola", "kids-play-area", "cctv", "modular-kitchen", "lobby", "intercom", "parking", "lift", "tree-plantation", "shops"],
+  "specifications": [
+    { "title": "Living & bedroom", "icon": "sofa", "items": ["Vitrified flooring", "Decorative false ceiling with POP cornice"] },
+    { "title": "Kitchen", "icon": "cooking-pot", "items": ["Granite platform with SS sink", "Designer tiles above platform", "Modular kitchen"] },
+    { "title": "Washroom", "icon": "bath", "items": ["Designer bathroom tiles", "Anti-skid flooring", "Concealed plumbing", "Premium CP fittings & branded sanitaryware"] },
+    { "title": "Windows & doors", "icon": "door-open", "items": ["Powder-coated sliding windows with railing", "Granite sills", "Wooden doors, granite / wooden frames"] },
+    { "title": "Electrical", "icon": "zap", "items": ["Concealed copper wiring", "Branded modular switches", "MCB safety features"] }
+  ],
+  "connectivity": [
+    { "place": "Nallasopara railway station", "distance": "5 min walk", "type": "transport" },
+    { "place": "VVCMC Hospital", "distance": "1 min", "type": "health" },
+    { "place": "Ashwini Children's Hospital", "distance": "2 min", "type": "health" },
+    { "place": "Ryan International School", "distance": "1 min", "type": "education" },
+    { "place": "St. Francis De Sales High School", "distance": "2 min", "type": "education" },
+    { "place": "Nana Nani Park", "distance": "2 min", "type": "park" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/deep-crown/cover.jpg", "alt": "Deep Crown tower in Chakradhar Nagar, Nalasopara West" },
+    "gallery": [
+      { "src": "/images/projects/deep-crown/amenities.jpg", "alt": "Deep Crown rooftop amenities and features", "kind": "amenity" },
+      { "src": "/images/projects/deep-crown/specs.jpg", "alt": "Deep Crown specifications", "kind": "interior" }
+    ],
+    "floorPlans": []
+  },
+  "brochure": "/brochures/deep-crown.pdf",
+  "bookingPhone": "+91 77570 17592",
+  "faqs": [
+    { "q": "Is Deep Crown RERA registered?", "a": "Yes. MahaRERA No. P99000054885." },
+    { "q": "How far is Deep Crown from Nallasopara station?", "a": "About a 5-minute walk." }
+  ],
+  "seo": {
+    "title": "Deep Crown: Premium Flats in Chakradhar Nagar, Nalasopara West",
+    "description": "MahaRERA-registered premium residences a 5-minute walk from Nallasopara station, with rooftop yoga zone, jogging track and kids' play area."
+  },
+  "publishedAt": "2025-06-11",
+  "updatedAt": "2026-09-29"
+}

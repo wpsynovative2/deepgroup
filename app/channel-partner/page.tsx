@@ -30,7 +30,7 @@ export default function ChannelPartnerPage() {
         accent={cp.hero.titleAccent}
         subtitle={cp.hero.subtitle}
         crumbs={[{ name: "Channel partners", href: "/channel-partner" }]}
-        image={{ src: "/images/projects/deep-sky/towers.jpg", alt: "" }}
+        image={{ src: "/images/projects/deep-sky/towers-sunset.jpg", alt: "", fill: true }}
       >
         <div className="flex flex-wrap gap-3">
           <ButtonLink href="#register" size="lg">

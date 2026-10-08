@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FitImage } from "@/components/ui/FitImage";
 import type { ReactNode } from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
@@ -9,7 +10,8 @@ type Props = {
   accent?: string;
   subtitle?: string;
   crumbs: Array<{ name: string; href: string }>;
-  image?: { src: string; alt: string };
+  /** `fill: true` crops to fill the arch; use only for images with spare space around the building. */
+  image?: { src: string; alt: string; fill?: boolean };
   children?: ReactNode;
   aside?: ReactNode;
 };
@@ -48,7 +50,11 @@ export function PageHero({ title, accent, subtitle, crumbs, image = { src: "/ima
           <div className="relative mx-auto hidden w-full max-w-[380px] lg:block">
             <div className="absolute -inset-4 arch border border-gold-500/40" aria-hidden />
             <div className="hero-settle relative aspect-[3/4] overflow-hidden arch shadow-2xl shadow-brand-900/20">
-              <FitImage src={image.src} alt={image.alt} preload loading="eager" sizes="380px" />
+              {image.fill ? (
+                <Image src={image.src} alt={image.alt} fill preload loading="eager" sizes="680px" quality={85} className="object-cover" />
+              ) : (
+                <FitImage src={image.src} alt={image.alt} preload loading="eager" sizes="380px" />
+              )}
             </div>
             <div aria-hidden className="absolute -bottom-6 -left-10 size-24 rounded-full bg-brand-700/90 blur-0" />
           </div>

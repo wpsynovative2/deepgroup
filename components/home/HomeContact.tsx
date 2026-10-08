@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { getSite } from "@/lib/data/content";
 import { LeadForm } from "@/components/forms/LeadForm";
@@ -14,7 +14,7 @@ export function HomeContact({ projects }: { projects: string[] }) {
       <div className="container-x grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="relative hidden lg:block" data-reveal="left">
           <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden arch shadow-2xl shadow-brand-900/20">
-            <Image src="/images/projects/deep-crown/cover.jpg" alt="" fill sizes="384px" className="object-cover" />
+            <FitImage src="/images/projects/deep-crown/cover.jpg" alt="" sizes="384px" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent" />
             <div className="absolute right-6 bottom-6 left-6 text-white">
               <p className="font-script text-4xl text-gold-400">Let&apos;s talk</p>

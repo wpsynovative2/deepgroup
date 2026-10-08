@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import { ArrowRight } from "lucide-react";
 import { getPage } from "@/lib/data/content";
 import { Icon } from "@/components/ui/Icon";
@@ -17,10 +17,10 @@ export function AboutTeaser() {
           <div aria-hidden className="absolute -top-6 -left-6 size-40 text-gold-500/40 dot-grid" />
           <LeafSprig className="absolute -bottom-10 -left-14 z-10 h-56 w-36 -rotate-12 text-brand-700/40" />
           <div className="relative ml-auto aspect-[4/5] w-[78%] overflow-hidden arch shadow-2xl shadow-brand-900/15">
-            <Image src="/images/about/towers-portrait.jpg" alt="Deep Group towers rising above the pool deck" fill sizes="(min-width: 1024px) 400px, 78vw" className="object-cover" />
+            <FitImage src="/images/about/towers-portrait.jpg" alt="Deep Group towers rising above the pool deck" sizes="(min-width: 1024px) 400px, 78vw" />
           </div>
           <div className="absolute bottom-10 left-0 aspect-square w-[42%] overflow-hidden rounded-[1.5rem] border-[6px] border-white shadow-xl">
-            <Image src="/images/projects/ankur-grandeur/cover.jpg" alt="Ankur Grandeur tower, Nalasopara East" fill sizes="220px" className="object-cover" />
+            <FitImage src="/images/projects/ankur-grandeur/cover.jpg" alt="Ankur Grandeur tower, Nalasopara East" sizes="220px" />
           </div>
           <div className="absolute top-10 left-[8%] rounded-2xl bg-brand-700 px-5 py-4 text-center text-white shadow-xl shadow-brand-900/30">
             <p className="font-display text-4xl leading-none text-gold-400">{about.yearsBadge}</p>

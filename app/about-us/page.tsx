@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { PageHero } from "@/components/layout/PageHero";
@@ -48,10 +48,10 @@ export default function AboutPage() {
           <div className="relative" data-reveal="left">
             <div className="grid grid-cols-2 gap-4">
               <div className="relative aspect-[3/4] overflow-hidden arch-sm">
-                <Image src="/images/projects/deep-landmark/cover.jpg" alt="Deep Landmark, Gala Nagar, Nalasopara East" fill sizes="(min-width: 1024px) 270px, 45vw" className="object-cover" />
+                <FitImage src="/images/projects/deep-landmark/cover.jpg" alt="Deep Landmark, Gala Nagar, Nalasopara East" sizes="(min-width: 1024px) 270px, 45vw" />
               </div>
               <div className="relative mt-12 aspect-[3/4] overflow-hidden arch-sm">
-                <Image src="/images/projects/deep-sky/cover.jpg" alt="Deep Sky, Yashwant Smart City, Vasai East" fill sizes="(min-width: 1024px) 270px, 45vw" className="object-cover" />
+                <FitImage src="/images/projects/deep-sky/cover.jpg" alt="Deep Sky, Yashwant Smart City, Vasai East" sizes="(min-width: 1024px) 270px, 45vw" />
               </div>
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-3xl bg-brand-700 px-7 py-5 text-center text-white shadow-2xl">
@@ -96,7 +96,7 @@ export default function AboutPage() {
               <li key={p.slug} className="w-44 shrink-0 snap-start lg:w-auto" data-reveal style={{ "--d": i * 70 } as React.CSSProperties}>
                 <Link href={`/projects/${p.slug}`} className="group block">
                   <span className="relative block aspect-[3/4] overflow-hidden arch-sm">
-                    <Image src={p.images.cover.src} alt={p.images.cover.alt} fill sizes="180px" className="object-cover transition duration-700 group-hover:scale-105" />
+                    <FitImage src={p.images.cover.src} alt={p.images.cover.alt} sizes="180px" className="transition duration-700 group-hover:scale-105" />
                     <span className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent opacity-0 transition group-hover:opacity-100" />
                     <ArrowUpRight className="absolute right-3 bottom-3 size-5 text-white opacity-0 transition group-hover:opacity-100" aria-hidden />
                   </span>

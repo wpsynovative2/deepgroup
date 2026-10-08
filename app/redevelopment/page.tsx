@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import Link from "next/link";
 import { ArrowRight, Quote, Users } from "lucide-react";
 import { PageHero } from "@/components/layout/PageHero";
@@ -79,7 +79,7 @@ export default function RedevelopmentPage() {
         <div className="container-x grid items-center gap-12 lg:grid-cols-2">
           <div className="relative" data-reveal="left">
             <div className="relative mx-auto aspect-[4/5] max-w-md overflow-hidden arch shadow-2xl">
-              <Image src="/images/projects/deep-crown/cover.jpg" alt="Deep Crown, the redevelopment of Sai Nidhi CHS" fill sizes="448px" className="object-cover" />
+              <FitImage src="/images/projects/deep-crown/cover.jpg" alt="Deep Crown, the redevelopment of Sai Nidhi CHS" sizes="448px" />
             </div>
             <figure className="absolute right-0 bottom-6 max-w-xs rounded-3xl bg-white p-6 shadow-2xl md:-right-6">
               <Quote className="size-8 fill-gold-100 text-gold-500" strokeWidth={1} aria-hidden />
@@ -116,7 +116,7 @@ export default function RedevelopmentPage() {
             {r.completed.map((c, i) => (
               <li key={c.name} className="group relative overflow-hidden rounded-3xl border border-line bg-white transition hover:border-gold-500" data-reveal style={{ "--d": i * 120 } as React.CSSProperties}>
                 <div className="relative aspect-[4/3] overflow-hidden">
-                  <Image src={c.image} alt={`${c.name}, ${c.location}`} fill sizes="(min-width: 768px) 33vw, 100vw" className="object-cover transition duration-1000 group-hover:scale-105" />
+                  <FitImage src={c.image} alt={`${c.name}, ${c.location}`} sizes="(min-width: 768px) 33vw, 100vw" className="transition duration-1000 group-hover:scale-105" />
                   <span className={`absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold ${c.status === "Completed" ? "bg-white text-ink" : "bg-gold-100 text-gold-600"}`}>
                     {c.status}
                   </span>

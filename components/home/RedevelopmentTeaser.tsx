@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import { ArrowRight } from "lucide-react";
 import { getPage } from "@/lib/data/content";
 import { Icon } from "@/components/ui/Icon";
@@ -41,7 +42,7 @@ export function RedevelopmentTeaser() {
             </span>
             <figure className="relative">
               <div className="relative aspect-[3/4] overflow-hidden arch-sm shadow-2xl shadow-brand-900/20">
-                <Image src="/images/projects/deep-crown/cover.jpg" alt="" fill sizes="300px" className="object-cover object-top" />
+                <FitImage src="/images/projects/deep-crown/cover.jpg" alt="" sizes="300px" />
               </div>
               <figcaption className="mt-2 text-center text-xs tracking-wide text-brand-700">Deep Crown, Sai Nidhi CHS</figcaption>
             </figure>

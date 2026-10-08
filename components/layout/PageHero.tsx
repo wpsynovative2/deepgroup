@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import type { ReactNode } from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { LeafSprig } from "@/components/decor/Botanical";
@@ -48,7 +48,7 @@ export function PageHero({ title, accent, subtitle, crumbs, image = { src: "/ima
           <div className="relative mx-auto hidden w-full max-w-[380px] lg:block">
             <div className="absolute -inset-4 arch border border-gold-500/40" aria-hidden />
             <div className="hero-settle relative aspect-[3/4] overflow-hidden arch shadow-2xl shadow-brand-900/20">
-              <Image src={image.src} alt={image.alt} fill preload loading="eager" sizes="380px" className="object-cover" />
+              <FitImage src={image.src} alt={image.alt} preload loading="eager" sizes="380px" />
             </div>
             <div aria-hidden className="absolute -bottom-6 -left-10 size-24 rounded-full bg-brand-700/90 blur-0" />
           </div>

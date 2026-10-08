@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import Link from "next/link";
 import { ArrowRight, TrainFront } from "lucide-react";
 import { getPage } from "@/lib/data/content";
@@ -20,7 +21,7 @@ export function StationPresence({ stations }: { stations: StationWithProjects[] 
       <div className="container-x relative grid items-end gap-10 lg:grid-cols-[1fr_auto]">
         <SectionHeading align="left" tone="dark" title={presence.title} subtitle={presence.subtitle} />
         <div className="relative hidden h-56 w-44 overflow-hidden arch ring-8 ring-white/10 lg:block" data-reveal="zoom">
-          <Image src="/images/redevelopment/tower.jpg" alt="" fill sizes="176px" className="object-cover" />
+          <FitImage src="/images/redevelopment/tower.jpg" alt="" sizes="176px" />
         </div>
       </div>
 

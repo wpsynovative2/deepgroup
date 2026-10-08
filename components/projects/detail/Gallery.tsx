@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import { useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Lightbox from "yet-another-react-lightbox";
@@ -25,7 +25,7 @@ export function Gallery({ images }: { images: Img[] }) {
                 className="group relative block aspect-[16/10] w-full overflow-hidden rounded-3xl"
                 aria-label={`Open image: ${img.alt}`}
               >
-                <Image src={img.src} alt={img.alt} fill sizes="(min-width: 768px) 60vw, 85vw" className="object-cover transition-transform duration-[1.2s] group-hover:scale-105" />
+                <FitImage src={img.src} alt={img.alt} sizes="(min-width: 768px) 60vw, 85vw" className="transition-transform duration-[1.2s] group-hover:scale-105" />
                 <span className="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent opacity-0 transition group-hover:opacity-100" />
                 <span className="absolute right-4 bottom-4 grid size-11 place-items-center rounded-full bg-white/90 text-brand-700 opacity-0 transition group-hover:opacity-100">
                   <Expand className="size-4" aria-hidden />

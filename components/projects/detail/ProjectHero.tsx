@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import { CalendarDays, IndianRupee, LayoutGrid, MapPin, ShieldCheck } from "lucide-react";
 import type { Project } from "@/types";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
@@ -91,15 +92,13 @@ export function ProjectHero({ p, stationName }: { p: Project; stationName: strin
         <div className="relative mx-auto w-full max-w-[420px]">
           <div aria-hidden className="absolute -inset-4 arch border border-gold-400/40" />
           <div className="hero-settle relative aspect-[3/4] overflow-hidden arch bg-white shadow-2xl shadow-black/40">
-            <Image
+            <FitImage
               src={p.images.cover.src}
               alt={p.images.cover.alt}
-              fill
               preload
               loading="eager"
               fetchPriority="high"
               sizes="(min-width: 1024px) 420px, 90vw"
-              className="object-cover object-top"
             />
           </div>
           {p.rera?.[0]?.qr ? (

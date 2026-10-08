@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { FitImage } from "@/components/ui/FitImage";
 import Link from "next/link";
 import { ArrowUpRight, CalendarDays, LayoutGrid, TrainFront } from "lucide-react";
 import type { ProjectSummary } from "@/types";
@@ -16,13 +16,13 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
       className="group relative flex flex-col overflow-hidden rounded-[1.25rem] border border-line bg-white transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-[0_30px_60px_-30px_rgba(101,7,39,.35)]"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Image
+        <FitImage
           src={p.cover.src}
           alt={p.cover.alt}
-          fill
+         
           preload={priority}
           sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-          className="object-cover transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
+          className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-transparent to-transparent opacity-80" />
         <div className="absolute top-4 left-4 flex gap-2">

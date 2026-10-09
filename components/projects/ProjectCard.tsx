@@ -24,7 +24,7 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
           sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
           className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 via-transparent to-transparent opacity-80" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-900/40 via-transparent to-transparent opacity-80" />
         <div className="absolute top-4 left-4 flex gap-2">
           <StatusBadge status={p.status} className="bg-white/90" />
         </div>
@@ -32,13 +32,13 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
           {CAT_LABEL[p.category]}
         </span>
         <div className="absolute right-4 bottom-4 left-4 flex items-end justify-between text-white">
-          <div>
-            <p className="text-xs text-white/70">
-              {p.priceMin ? "Starting from" : p.unitLabels.length ? (p.category === "residential" ? "Homes" : "Spaces") : "Highlight"}
-            </p>
-            <p className="font-display text-2xl">{p.priceMin ? formatPrice(p.priceMin) : p.unitLabels.length ? p.configs : p.highlights[0]}</p>
-          </div>
-          <span className="grid size-11 translate-y-2 place-items-center rounded-full bg-white text-brand-700 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:rotate-45 group-hover:opacity-100">
+          {p.priceMin ? (
+            <div>
+              <p className="text-xs text-white/70">Starting from</p>
+              <p className="font-display text-2xl">{formatPrice(p.priceMin)}</p>
+            </div>
+          ) : null}
+          <span className="ml-auto grid size-11 translate-y-2 place-items-center rounded-full bg-white text-brand-700 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:rotate-45 group-hover:opacity-100">
             <ArrowUpRight className="size-5" aria-hidden />
           </span>
         </div>

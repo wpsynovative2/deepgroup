@@ -1,6 +1,5 @@
 {
   "hero": {
-    "eyebrow": "27 years of success",
     "title": "Homes and workspaces",
     "titleAccent": "along the Western line",
     "subtitle": "Residential and industrial projects in Nalasopara, Virar and Vasai.",
@@ -9,12 +8,12 @@
     "badge": "Extraordinary Reach · Extraordinary Results ·"
   },
   "stats": [
-    { "value": 25, "suffix": "+", "label": "Years of success" },
+    { "value": 27, "suffix": "", "label": "Years of experience" },
     { "value": 25, "suffix": "", "label": "Projects delivered" },
     { "value": 7, "suffix": "", "label": "Current projects" },
     { "value": 3, "suffix": "", "label": "Industrial hubs delivered" }
   ],
-  "marquee": ["Nalasopara", "Virar", "Vasai", "25 years of success", "On-time possession", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
+  "marquee": ["Nalasopara", "Virar", "Vasai", "27 years of experience", "On-time possession", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
   "featured": { "title": "Our projects", "subtitle": "Current addresses, each a short ride from the station." },
   "categories": { "title": "What we build" },
   "about": {
@@ -27,7 +26,7 @@
       { "icon": "maximize", "label": "Well-planned layouts" },
       { "icon": "sparkles", "label": "Good amenities" }
     ],
-    "yearsBadge": "25+"
+    "yearsBadge": "27"
   },
   "presence": { "title": "Where we build", "subtitle": "Every project is a short ride from a Western line station." },
   "legacy": { "title": "A legacy of", "titleAccent": "25 projects", "subtitle": "Delivered homes and industrial hubs across Nallasopara and Virar." },

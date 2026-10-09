@@ -4,6 +4,7 @@ import type { ProjectSummary } from "@/types";
 import { getPage } from "@/lib/data/content";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Carousel } from "@/components/ui/Carousel";
 
 export function FeaturedProjects({ projects }: { projects: ProjectSummary[] }) {
   const { featured } = getPage("home");
@@ -17,10 +18,12 @@ export function FeaturedProjects({ projects }: { projects: ProjectSummary[] }) {
             <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden />
           </Link>
         </div>
-        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((p, i) => (
-            <ProjectCard key={p.slug} p={p} delay={(i % 3) * 120} />
-          ))}
+        <div className="mt-12" data-reveal>
+          <Carousel label="Our projects">
+            {projects.map((p) => (
+              <ProjectCard key={p.slug} p={p} />
+            ))}
+          </Carousel>
         </div>
       </div>
     </section>

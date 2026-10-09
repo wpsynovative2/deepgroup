@@ -55,8 +55,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-3xl bg-brand-700 px-7 py-5 text-center text-white shadow-2xl">
-              <p className="font-display text-5xl leading-none text-gold-400">{site.yearsOfSuccess}th</p>
-              <p className="mt-1 text-xs tracking-[0.2em] uppercase">Year of success</p>
+              <p className="font-display text-5xl leading-none text-gold-400">{site.yearsOfSuccess}</p>
+              <p className="mt-1 text-xs tracking-[0.2em] uppercase">Years of experience</p>
             </div>
           </div>
           <div>

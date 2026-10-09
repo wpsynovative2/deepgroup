@@ -108,11 +108,12 @@
   @media (width >= 64rem) { padding-block: 112px; }
 }
 
+/* Image frames: square corners softened with an even radius. */
 @utility arch {
-  border-radius: 999px 999px 0 0;
+  border-radius: 1.75rem;
 }
 @utility arch-sm {
-  border-radius: 200px 200px 12px 12px;
+  border-radius: 1.25rem;
 }
 
 @utility grain {
@@ -165,6 +166,8 @@
   opacity: 1;
   transform: none;
 }
+/* Carousel slides reveal with their carousel, not one by one as they slide in. */
+[data-carousel] [data-reveal] { opacity: 1; transform: none; }
 /* Without JS, show everything. */
 .no-js [data-reveal] { opacity: 1; transform: none; }
 

@@ -8,7 +8,7 @@ import { Wave } from "@/components/decor/Wave";
 import { JobList } from "@/components/career/JobList";
 import { ApplicationForm } from "@/components/career/ApplicationForm";
 import { getPage, getPageSeo } from "@/lib/data/content";
-import { getOpenJobs } from "@/lib/data/jobs";
+import { getAllJobs, getOpenJobs } from "@/lib/data/jobs";
 import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({ ...getPageSeo("/career"), path: "/career" });
@@ -16,6 +16,7 @@ export const metadata = buildMetadata({ ...getPageSeo("/career"), path: "/career
 export default function CareerPage() {
   const c = getPage("career");
   const jobs = getOpenJobs();
+  const departments = [...new Set(getAllJobs().map((j) => j.department))];
 
   return (
     <>
@@ -27,7 +28,7 @@ export default function CareerPage() {
         image={{ src: "/images/projects/deep-landmark/cover.jpg", alt: "" }}
       >
         <ButtonLink href="#openings" size="lg">
-          See {jobs.length} open roles <ArrowRight className="size-4" aria-hidden />
+          See {jobs.length} open {jobs.length === 1 ? "role" : "roles"} <ArrowRight className="size-4" aria-hidden />
         </ButtonLink>
       </PageHero>
 
@@ -62,7 +63,7 @@ export default function CareerPage() {
         <div className="container-x max-w-4xl">
           <SectionHeading title="Open" accent="positions" />
           <div className="mt-10">
-            <JobList jobs={jobs} />
+            <JobList jobs={jobs} departments={departments} />
           </div>
         </div>
       </section>

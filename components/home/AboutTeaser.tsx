@@ -24,7 +24,7 @@ export function AboutTeaser() {
           </div>
           <div className="absolute top-10 left-[8%] rounded-2xl bg-brand-700 px-5 py-4 text-center text-white shadow-xl shadow-brand-900/30">
             <p className="font-display text-4xl leading-none text-gold-400">{about.yearsBadge}</p>
-            <p className="mt-1 text-xs tracking-wide text-white/80">Years of trust</p>
+            <p className="mt-1 text-xs tracking-wide text-white/80">Years of experience</p>
           </div>
         </div>
 

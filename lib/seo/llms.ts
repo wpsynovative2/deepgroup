@@ -5,7 +5,7 @@ import { getAmenity, getFaqs, getPage, getSite } from "@/lib/data/content";
 import { formatConfigs, formatPrice, possessionLabel, siteUrl } from "@/lib/utils";
 
 const summary = () =>
-  "Deep Group (Deep Builder & Developers) has built homes and industrial hubs in Nallasopara, Virar and Vasai for 25 years, with 25 completed projects. Tagline: Extraordinary Reach. Extraordinary Results.";
+  "Deep Group (Deep Builder & Developers) has built homes and industrial hubs in Nallasopara, Virar and Vasai for 27 years, with 25 completed projects. Tagline: Extraordinary Reach. Extraordinary Results.";
 
 export function buildLlmsTxt() {
   const site = getSite();

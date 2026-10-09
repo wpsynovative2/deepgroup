@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowUpRight, Briefcase, Clock, MapPin } from "lucide-react";
+import { ArrowUpRight, Briefcase, Clock, MapPin, SearchX } from "lucide-react";
 import type { Job } from "@/types";
 import { cn } from "@/lib/utils";
 
-export function JobList({ jobs }: { jobs: Job[] }) {
-  const departments = ["All", ...new Set(jobs.map((j) => j.department))];
+/** `departments` lists every team, so ones without openings still show a filter and an empty state. */
+export function JobList({ jobs, departments: all }: { jobs: Job[]; departments: string[] }) {
+  const departments = ["All", ...all];
   const [dept, setDept] = useState("All");
   const shown = dept === "All" ? jobs : jobs.filter((j) => j.department === dept);
 
@@ -26,6 +27,15 @@ export function JobList({ jobs }: { jobs: Job[] }) {
           </button>
         ))}
       </div>
+      {shown.length === 0 ? (
+        <div className="mt-10 flex flex-col items-center gap-3 rounded-3xl border border-dashed border-line bg-cream px-6 py-12 text-center">
+          <SearchX className="size-8 text-gold-500" strokeWidth={1.5} aria-hidden />
+          <p className="font-display text-2xl text-brand-700">No open positions yet</p>
+          <p className="max-w-sm text-sm text-muted">
+            Nothing open in {dept} right now. Send us your résumé below and we&apos;ll reach out when a role opens.
+          </p>
+        </div>
+      ) : (
       <ul className="mt-10 grid gap-4">
         {shown.map((j) => (
           <li key={j.slug}>
@@ -49,6 +59,7 @@ export function JobList({ jobs }: { jobs: Job[] }) {
           </li>
         ))}
       </ul>
+      )}
     </div>
   );
 }

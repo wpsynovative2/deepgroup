@@ -39,7 +39,7 @@ export function Footer() {
           <div>
             <Logo plate className="h-24" />
             <p className="mt-5 max-w-xs text-sm">
-              {site.tagline}. {site.yearsOfSuccess} years of homes and industrial hubs along the Western line.
+              {site.tagline}. {site.yearsOfSuccess} years of experience building homes and industrial hubs along the Western line.
             </p>
             <div className="mt-6 flex gap-2">
               {Object.entries(site.social).map(([name, url]) => (

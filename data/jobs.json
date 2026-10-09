@@ -7,22 +7,41 @@
     "type": "FULL_TIME",
     "experience": "2–5 years",
     "description": "Supervise day-to-day execution on our residential towers in Nallasopara and Vasai.",
-    "responsibilities": ["Supervise RCC and finishing work", "Maintain daily progress reports", "Coordinate with contractors and consultants", "Enforce safety and quality standards"],
-    "requirements": ["B.E. / Diploma in Civil Engineering", "2–5 years of high-rise site experience", "Working knowledge of AutoCAD and MS Project"],
+    "responsibilities": [
+      "Supervise RCC and finishing work",
+      "Maintain daily progress reports",
+      "Coordinate with contractors and consultants",
+      "Enforce safety and quality standards"
+    ],
+    "requirements": [
+      "B.E. / Diploma in Civil Engineering",
+      "2–5 years of high-rise site experience",
+      "Working knowledge of AutoCAD and MS Project"
+    ],
     "postedAt": "2026-09-01",
     "validThrough": "2026-11-30",
-    "open": true
+    "open": false
   },
   {
-    "slug": "sales-manager",
-    "title": "Sales Manager",
+    "slug": "sourcing-manager",
+    "title": "Sourcing Manager",
     "department": "Sales",
     "location": "Nallasopara East",
     "type": "FULL_TIME",
-    "experience": "3–7 years",
-    "description": "Lead site sales for our residential projects and convert enquiries into bookings.",
-    "responsibilities": ["Host site visits and presentations", "Follow up and close leads", "Coordinate with channel partners", "Meet monthly booking targets"],
-    "requirements": ["Graduate in any discipline", "3+ years in real estate sales", "Fluent in English, Hindi and Marathi"],
+    "experience": "2–5 years",
+    "description": "Build a steady pipeline of walk-ins for our residential projects through channel partners, corporate tie-ups and local activations.",
+    "responsibilities": [
+      "Onboard and manage channel partners and brokers",
+      "Generate site visits through corporate and local tie-ups",
+      "Plan on-ground activations in Nallasopara, Virar and Vasai",
+      "Track sourced leads through to booking"
+    ],
+    "requirements": [
+      "Graduate in any discipline",
+      "2+ years in real estate sourcing or sales",
+      "Strong channel partner network in the Western suburbs",
+      "Fluent in English, Hindi and Marathi"
+    ],
     "postedAt": "2026-09-10",
     "validThrough": "2026-12-15",
     "open": true
@@ -35,11 +54,19 @@
     "type": "FULL_TIME",
     "experience": "1–3 years",
     "description": "Run lead-generation campaigns across Google and Meta for our launches.",
-    "responsibilities": ["Plan and run paid campaigns", "Track leads and cost per lead", "Coordinate creatives with agencies"],
-    "requirements": ["1–3 years in performance marketing", "Hands-on with Google Ads and Meta Ads", "Real estate experience is a plus"],
+    "responsibilities": [
+      "Plan and run paid campaigns",
+      "Track leads and cost per lead",
+      "Coordinate creatives with agencies"
+    ],
+    "requirements": [
+      "1–3 years in performance marketing",
+      "Hands-on with Google Ads and Meta Ads",
+      "Real estate experience is a plus"
+    ],
     "postedAt": "2026-09-15",
     "validThrough": "2026-12-31",
-    "open": true
+    "open": false
   },
   {
     "slug": "accounts-executive",
@@ -49,8 +76,14 @@
     "type": "FULL_TIME",
     "experience": "2–4 years",
     "description": "Manage customer accounts, demand letters and GST filings.",
-    "responsibilities": ["Raise demand letters", "Reconcile customer payments"],
-    "requirements": ["B.Com / M.Com", "Tally experience"],
+    "responsibilities": [
+      "Raise demand letters",
+      "Reconcile customer payments"
+    ],
+    "requirements": [
+      "B.Com / M.Com",
+      "Tally experience"
+    ],
     "postedAt": "2026-05-01",
     "validThrough": "2026-07-01",
     "open": false

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, BadgeCheck, Building2 } from "lucide-react";
+import { ArrowRight, Building2 } from "lucide-react";
 import { getPage } from "@/lib/data/content";
 import { ButtonLink } from "@/components/ui/Button";
 import { CtaButton } from "@/components/ui/CtaButton";
@@ -42,9 +42,6 @@ export function Hero({ stations, categories, projectCount }: Props) {
           className="pointer-events-none absolute top-16 left-1/2 h-[560px] w-[min(1100px,120%)] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,.95)_0%,rgba(255,255,255,.8)_40%,rgba(255,255,255,0)_70%)]"
         />
         <div className="container-x relative flex flex-col items-center pt-32 text-center md:pt-36">
-          <p className="hero-rise mb-5 inline-flex items-center gap-2 rounded-full border border-gold-500/40 bg-white/70 px-4 py-1.5 text-sm text-gold-600 backdrop-blur">
-            <BadgeCheck className="size-4" aria-hidden /> {hero.eyebrow}
-          </p>
           <h1 className="hero-rise text-[2.5rem] leading-[1.02] sm:text-6xl lg:text-[4.6rem]" style={{ "--d": 120 } as React.CSSProperties}>
             {hero.title}
             <span className="mt-1 block font-script text-[1.25em] leading-[1.05] font-normal text-gold-600">{hero.titleAccent}</span>

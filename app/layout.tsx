@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
-import { Instrument_Sans, Marcellus, Pinyon_Script } from "next/font/google";
+import { Cormorant_Garamond, Instrument_Sans, Marcellus } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -16,7 +16,7 @@ import { siteUrl } from "@/lib/utils";
 
 const marcellus = Marcellus({ variable: "--font-marcellus", weight: "400", subsets: ["latin"], display: "swap" });
 const instrument = Instrument_Sans({ variable: "--font-instrument", subsets: ["latin"], display: "swap" });
-const pinyon = Pinyon_Script({ variable: "--font-pinyon", weight: "400", subsets: ["latin"], display: "swap" });
+const cormorant = Cormorant_Garamond({ variable: "--font-cormorant", weight: "500", style: "italic", subsets: ["latin"], display: "swap" });
 
 const seo = getSeo();
 
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   const projectNames = getAllProjects().map((p) => p.name);
 
   return (
-    <html lang="en-IN" data-scroll-behavior="smooth" className={`no-js ${marcellus.variable} ${instrument.variable} ${pinyon.variable}`} suppressHydrationWarning>
+    <html lang="en-IN" data-scroll-behavior="smooth" className={`no-js ${marcellus.variable} ${instrument.variable} ${cormorant.variable}`} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: "document.documentElement.classList.remove('no-js')" }} />
       </head>

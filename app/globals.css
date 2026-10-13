@@ -26,7 +26,7 @@
 
   --font-display: var(--font-marcellus), Georgia, serif;
   --font-sans: var(--font-instrument), system-ui, sans-serif;
-  --font-script: var(--font-pinyon), cursive;
+  --font-script: var(--font-cormorant), Georgia, serif;
 
   --radius-card: 0.75rem;
   --radius-control: 0.5rem;
@@ -82,6 +82,7 @@
     text-wrap: balance;
   }
   p { text-wrap: pretty; }
+  .font-script { font-style: italic; }
   :focus-visible {
     outline: 2px solid var(--color-gold-500);
     outline-offset: 2px;

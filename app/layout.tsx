@@ -16,7 +16,7 @@ import { siteUrl } from "@/lib/utils";
 
 const marcellus = Marcellus({ variable: "--font-marcellus", weight: "400", subsets: ["latin"], display: "swap" });
 const instrument = Instrument_Sans({ variable: "--font-instrument", subsets: ["latin"], display: "swap" });
-const cormorant = Cormorant_Garamond({ variable: "--font-cormorant", weight: "500", style: "italic", subsets: ["latin"], display: "swap" });
+const cormorant = Cormorant_Garamond({ variable: "--font-cormorant", weight: "500",subsets: ["latin"], display: "swap" });
 
 const seo = getSeo();
 

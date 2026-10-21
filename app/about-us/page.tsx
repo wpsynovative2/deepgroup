@@ -20,7 +20,6 @@ export const metadata = buildMetadata({ ...getPageSeo("/about-us"), path: "/abou
 
 export default function AboutPage() {
   const about = getPage("about");
-  const { stats } = getPage("home");
   const site = getSite();
   const current = getAllProjects();
 
@@ -55,14 +54,14 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-3xl bg-brand-700 px-7 py-5 text-center text-white shadow-2xl">
-              <p className="font-display text-5xl leading-none text-gold-400">{site.yearsOfSuccess}</p>
+              <p className="font-display text-5xl leading-none text-gold-400">{site.yearsOfSuccess}+</p>
               <p className="mt-1 text-xs tracking-[0.2em] uppercase">Years of experience</p>
             </div>
           </div>
           <div>
             <SectionHeading align="left" title={about.story.title} subtitle={about.story.body} />
             <dl className="mt-10 grid grid-cols-2 gap-4">
-              {stats.map((s, i) => (
+              {about.stats.map((s, i) => (
                 <div key={s.label} className="rounded-2xl border border-line bg-cream p-5" data-reveal style={{ "--d": i * 90 } as React.CSSProperties}>
                   <dd className="font-display text-4xl text-brand-700">
                     <CountUp value={s.value} suffix={s.suffix} />

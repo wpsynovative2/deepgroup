@@ -14,14 +14,14 @@ export default function ProjectsPage() {
     <ListingTemplate
       title="Our"
       accent="projects"
-      subtitle="Homes and industrial spaces near Nallasopara, Virar and Vasai Road stations."
+      subtitle="A growing portfolio of homes, commercial spaces and industrial developments across Western suburbs."
       crumbs={[{ name: "Projects", href: "/projects" }]}
       projects={projects}
       stations={stations}
       heroImage={{ src: "/images/projects/deep-sky/cover.jpg", alt: "" }}
       stats={[
-        { value: String(projects.length), label: "Projects" },
-        { value: String(stations.length), label: "Stations" },
+        { value: String(stations.length), label: "Key Locations" },
+        { value: "30+", label: "Projects Delivered" },
         { value: String(getActiveCategories().length), label: "Categories" },
       ]}
     />

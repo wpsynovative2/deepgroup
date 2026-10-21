@@ -4,6 +4,7 @@
   "tagline": "Not just a home, a precious legacy",
   "description": "Heritage-style residences near Patankar Road, Nalasopara West, a 5-minute walk from the station, with shops on the ground floor.",
   "category": "residential",
+  "alsoListedIn": ["commercial"],
   "subType": "apartments",
   "status": "upcoming",
   "featured": true,

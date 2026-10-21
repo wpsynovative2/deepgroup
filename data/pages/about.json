@@ -1,18 +1,24 @@
 {
   "hero": {
-    "title": "27 years of",
-    "titleAccent": "delivered promises",
-    "subtitle": "Extraordinary Reach. Extraordinary Results."
+    "title": "27+ years of",
+    "titleAccent": "completed commitments",
+    "subtitle": "Excellence with every endeavour"
   },
   "story": {
-    "title": "Our story",
-    "body": "At Deep Group, we believe in delivering what we promise. Our priorities are quality residential spaces within budget, well-planned layouts, good amenities and on-time possession. It's our passion for quality that has earned us our great reputation."
+    "title": "Our Story",
+    "body": "Deep Group began as a small construction firm with a simple vision: to create quality homes at accessible prices. Over the years, that beginning has grown into a real estate group with 30+ completed projects across residential, commercial and industrial developments. With every project, we’ve grown our experience. Today, we continue to carry that experience into the next generation of Deep Group projects."
   },
+  "stats": [
+    { "value": 27, "suffix": "+", "label": "Years of experience" },
+    { "value": 30, "suffix": "+", "label": "Projects completed" },
+    { "value": 5, "suffix": "", "label": "Ongoing projects" },
+    { "value": 3, "suffix": "", "label": "Industrial Hubs delivered" }
+  ],
   "pillars": [
     { "icon": "gem", "title": "Quality within budget", "text": "Homes families can afford and be proud of" },
     { "icon": "maximize", "title": "Well-planned layouts", "text": "Vastu-conscious, well-ventilated homes" },
     { "icon": "sparkles", "title": "Good amenities", "text": "Rooftop lawns, gyms, play areas and more" },
-    { "icon": "calendar-check", "title": "On-time possession", "text": "Our record across 25 delivered projects" }
+    { "icon": "calendar-check", "title": "On-time possession", "text": "Our record across 30+ delivered projects" }
   ],
   "compliance": [
     { "icon": "badge-check", "title": "MahaRERA", "text": "Current projects registered" },

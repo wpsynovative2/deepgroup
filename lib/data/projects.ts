@@ -5,7 +5,7 @@ import { cache } from "react";
 import { ProjectSchema, CATEGORIES, type Project, type Category } from "@/lib/schemas/project.schema";
 import type { ProjectSummary } from "@/types";
 import { getStations } from "./stations";
-import { getCategoryContent } from "./content";
+import { getCategoryContent, getLegacy } from "./content";
 import { formatConfigs, possessionLabel } from "@/lib/utils";
 
 const DIR = path.join(process.cwd(), "data/projects");
@@ -35,9 +35,11 @@ export function getRelatedProjects(p: Project, limit = 3) {
     .slice(0, limit);
 }
 
+export const inCategory = (p: Project, c: Category) => p.category === c || p.alsoListedIn.includes(c);
+
 export function getActiveCategories(): Array<{ slug: Category; count: number }> {
   const all = getAllProjects();
-  return CATEGORIES.map((slug) => ({ slug, count: all.filter((p) => p.category === slug).length })).filter(
+  return CATEGORIES.map((slug) => ({ slug, count: all.filter((p) => inCategory(p, slug)).length })).filter(
     (c) => c.count > 0,
   );
 }
@@ -45,12 +47,18 @@ export function getActiveCategories(): Array<{ slug: Category; count: number }> 
 /**
  * Categories shown in navigation and tiles: every category with projects, plus any marked
  * "comingSoon" in data/categories.json (shown with a "Coming soon" badge instead of a count).
+ * Counts include projects from data/legacy.json.
  */
 export function getNavCategories() {
   const counts = new Map(getActiveCategories().map((c) => [c.slug, c.count]));
+  const legacy = getLegacy();
   return getCategoryContent()
     .filter((c) => counts.has(c.slug) || c.comingSoon)
-    .map((c) => ({ ...c, count: counts.get(c.slug) ?? 0, comingSoon: !counts.has(c.slug) }));
+    .map((c) => ({
+      ...c,
+      count: (counts.get(c.slug) ?? 0) + legacy.filter((l) => l.type === c.slug).length,
+      comingSoon: !counts.has(c.slug),
+    }));
 }
 
 /** The slim shape handed to cards and the client filter island. */
@@ -61,6 +69,7 @@ export function toSummary(p: Project): ProjectSummary {
     name: p.name,
     tagline: p.tagline,
     category: p.category,
+    categories: [p.category, ...p.alsoListedIn],
     status: p.status,
     featured: p.featured,
     station: p.station,

@@ -42,7 +42,7 @@ export default function HomePage() {
       <Marquee items={home.marquee} />
       <AboutTeaser />
       <CategoryTiles />
-      <FeaturedProjects projects={projects.slice(0, 6).map(toSummary)} />
+      <FeaturedProjects projects={projects.map((p) => ({ ...toSummary(p), overview: p.description ?? p.tagline, floors: p.floors }))} />
       <StationPresence
         stations={stations.map((s) => ({
           slug: s.slug,

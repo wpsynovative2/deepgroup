@@ -2,12 +2,16 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowUpRight, Briefcase, Clock, MapPin, SearchX } from "lucide-react";
+import { ArrowUpRight, Briefcase, CalendarClock, Clock, MapPin, SearchX } from "lucide-react";
 import type { Job } from "@/types";
 import { cn } from "@/lib/utils";
 
+/** "2026-12-15" → "15 Dec 2026"; parsed as UTC so server and client agree. */
+const applyBy = (iso: string) =>
+  new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" });
+
 /** `departments` lists every team, so ones without openings still show a filter and an empty state. */
-export function JobList({ jobs, departments: all }: { jobs: Job[]; departments: string[] }) {
+export function JobList({ jobs, departments: all, empty }: { jobs: Job[]; departments: string[]; empty: { title: string; text: string } }) {
   const departments = ["All", ...all];
   const [dept, setDept] = useState("All");
   const shown = dept === "All" ? jobs : jobs.filter((j) => j.department === dept);
@@ -30,10 +34,8 @@ export function JobList({ jobs, departments: all }: { jobs: Job[]; departments: 
       {shown.length === 0 ? (
         <div className="mt-10 flex flex-col items-center gap-3 rounded-3xl border border-dashed border-line bg-cream px-6 py-12 text-center">
           <SearchX className="size-8 text-gold-500" strokeWidth={1.5} aria-hidden />
-          <p className="font-display text-2xl text-brand-700">No open positions yet</p>
-          <p className="max-w-sm text-sm text-muted">
-            Nothing open in {dept} right now. Send us your résumé below and we&apos;ll reach out when a role opens.
-          </p>
+          <p className="font-display text-2xl text-brand-700">{empty.title}</p>
+          <p className="max-w-sm text-sm text-muted">{empty.text}</p>
         </div>
       ) : (
       <ul className="mt-10 grid gap-4">
@@ -50,6 +52,9 @@ export function JobList({ jobs, departments: all }: { jobs: Job[]; departments: 
                   <span className="flex items-center gap-1.5"><MapPin className="size-4 text-gold-500" aria-hidden /> {j.location}</span>
                   <span className="flex items-center gap-1.5"><Briefcase className="size-4 text-gold-500" aria-hidden /> {j.experience}</span>
                   <span className="flex items-center gap-1.5"><Clock className="size-4 text-gold-500" aria-hidden /> {j.type === "FULL_TIME" ? "Full time" : j.type.replace("_", " ").toLowerCase()}</span>
+                </p>
+                <p className="mt-2 flex items-center gap-1.5 text-sm font-medium text-brand-700">
+                  <CalendarClock className="size-4 text-gold-500" aria-hidden /> Apply by {applyBy(j.validThrough)}
                 </p>
               </div>
               <span className="grid size-14 shrink-0 place-items-center rounded-full border border-brand-700/20 text-brand-700 transition-all duration-500 group-hover:rotate-45 group-hover:bg-brand-700 group-hover:text-white">

@@ -1,6 +1,6 @@
 {
   "slug": "mahavir-enclave",
-  "name": "Mahavir Enclave",
+  "name": "Deep Mahavir Enclave",
   "tagline": "City-centric 1 & 2 BHK residences in Evershine City, Vasai East",
   "description": "Live connected: malls, hospitals and schools within 2 minutes, with a terrace sky walk and outdoor gym.",
   "category": "residential",
@@ -37,10 +37,10 @@
     { "place": "J.B. Ludhani High School", "distance": "2 min", "type": "education" }
   ],
   "images": {
-    "cover": { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Aerial view of Mahavir Enclave with rooftop amenities, Vasai East" },
+    "cover": { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Aerial view of Deep Mahavir Enclave with rooftop amenities, Vasai East" },
     "gallery": [
-      { "src": "/images/projects/mahavir-enclave/lifestyle.jpg", "alt": "Mahavir Enclave lifestyle features", "kind": "amenity" },
-      { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Mahavir Enclave aerial view", "kind": "exterior" }
+      { "src": "/images/projects/mahavir-enclave/lifestyle.jpg", "alt": "Deep Mahavir Enclave lifestyle features", "kind": "amenity" },
+      { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Deep Mahavir Enclave aerial view", "kind": "exterior" }
     ],
     "floorPlans": [
       { "src": "/images/projects/mahavir-enclave/plan-1bhk.jpg", "alt": "1 BHK, living 9'0\" × 14'0\", bedroom 9'0\" × 9'0\"", "label": "1 BHK" },
@@ -51,11 +51,11 @@
   "brochure": "/brochures/mahavir-enclave.pdf",
   "bookingPhone": "+91 77570 17592",
   "faqs": [
-    { "q": "Where is Mahavir Enclave?", "a": "Near Carnival Cinema in Evershine City, Vasai East, about 10 minutes from Vasai Road station." },
+    { "q": "Where is Deep Mahavir Enclave?", "a": "Near Carnival Cinema in Evershine City, Vasai East, about 10 minutes from Vasai Road station." },
     { "q": "What configurations are available?", "a": "1 BHK and 2 BHK homes." }
   ],
   "seo": {
-    "title": "Mahavir Enclave: 1 & 2 BHK Flats in Evershine City, Vasai East",
+    "title": "Deep Mahavir Enclave: 1 & 2 BHK Flats in Evershine City, Vasai East",
     "description": "City-centric 1 & 2 BHK flats near Carnival Cinema, Evershine City, Vasai East. Terrace sky walk, outdoor gym and kids' play area."
   },
   "publishedAt": "2024-08-28",

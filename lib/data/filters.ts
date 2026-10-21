@@ -82,7 +82,7 @@ export function countActive(f: FilterState) {
 }
 
 function matches(p: ProjectSummary, f: FilterState, skip?: keyof FilterState) {
-  if (skip !== "category" && f.category?.length && !f.category.includes(p.category)) return false;
+  if (skip !== "category" && f.category?.length && !f.category.some((c) => p.categories.includes(c))) return false;
   if (skip !== "status" && f.status?.length && !f.status.includes(p.status)) return false;
   if (skip !== "station" && f.station?.length && !f.station.includes(p.station)) return false;
   if (skip !== "config" && f.config?.length && !p.unitLabels.some((u) => f.config!.includes(u))) return false;
@@ -129,7 +129,7 @@ export function getFacetCounts(projects: ProjectSummary[], f: FilterState) {
       for (const x of POSSESSIONS) if (x.test(p)) possession[x.value] = (possession[x.value] ?? 0) + 1;
   }
   return {
-    category: facet("category", (p) => [p.category]),
+    category: facet("category", (p) => p.categories),
     status: facet("status", (p) => [p.status]),
     station: facet("station", (p) => [p.station]),
     config: facet("config", (p) => p.unitLabels),
@@ -140,7 +140,7 @@ export function getFacetCounts(projects: ProjectSummary[], f: FilterState) {
 
 /** Configuration chips depend on the chosen category (industrial hides BHK). */
 export function getConfigOptions(projects: ProjectSummary[], f: FilterState) {
-  const scope = f.category?.length ? projects.filter((p) => f.category!.includes(p.category)) : projects;
+  const scope = f.category?.length ? projects.filter((p) => f.category!.some((c) => p.categories.includes(c))) : projects;
   const labels = [...new Set(scope.flatMap((p) => p.unitLabels))];
   return labels.sort((a, b) => {
     const ra = RESIDENTIAL_CONFIG.test(a), rb = RESIDENTIAL_CONFIG.test(b);

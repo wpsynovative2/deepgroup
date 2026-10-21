@@ -1,38 +1,47 @@
 {
   "hero": {
-    "title": "Homes and workspaces",
-    "titleAccent": "along the Western line",
-    "subtitle": "Residential and industrial projects in Nalasopara, Virar and Vasai.",
-    "primaryCta": "Explore projects",
-    "secondaryCta": "Book a site visit",
+    "title": "The Homes We Build",
+    "titleAccent": "Tell Our Story",
+    "subtitle": "Developing residential and industrial spaces along the Western Line",
+    "primaryCta": "Explore Our Projects",
+    "secondaryCta": "Enquire Now",
     "badge": "Extraordinary Reach · Extraordinary Results ·"
   },
   "stats": [
-    { "value": 27, "suffix": "", "label": "Years of experience" },
-    { "value": 25, "suffix": "", "label": "Projects delivered" },
+    { "value": 27, "suffix": "+", "label": "Years of success" },
+    { "value": 30, "suffix": "+", "label": "Projects delivered" },
     { "value": 7, "suffix": "", "label": "Current projects" },
     { "value": 3, "suffix": "", "label": "Industrial hubs delivered" }
   ],
-  "marquee": ["Nalasopara", "Virar", "Vasai", "27 years of experience", "On-time possession", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
-  "featured": { "title": "Our projects", "subtitle": "Current addresses, each a short ride from the station." },
-  "categories": { "title": "What we build" },
+  "marquee": ["Nalasopara", "Virar", "Vasai", "27+ years of success", "On-time delivery", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
+  "featured": { "title": "Our Projects", "subtitle": "You’re witnessing our evolution" },
+  "categories": { "title": "What We Build" },
   "about": {
-    "title": "We deliver what we",
-    "titleAccent": "promise",
-    "body": "Quality homes within budget, well-planned layouts, good amenities and on-time possession. That passion for quality earned our reputation.",
+    "title": "More Than 27 Years",
+    "titleAccent": "and 30 Projects",
+    "body": "We’ve shaped homes and communities across the western suburbs with our fundamentals remaining unchanged: build with purpose and commitment to create spaces people are proud of.",
     "points": [
-      { "icon": "calendar-check", "label": "On-time possession" },
+      { "icon": "calendar-check", "label": "On-time delivery" },
       { "icon": "gem", "label": "Quality within budget" },
       { "icon": "maximize", "label": "Well-planned layouts" },
       { "icon": "sparkles", "label": "Good amenities" }
     ],
-    "yearsBadge": "27"
+    "cta": "Discover Deep Group",
+    "yearsBadge": "27+"
   },
-  "presence": { "title": "Where we build", "subtitle": "Every project is a short ride from a Western line station." },
-  "legacy": { "title": "A legacy of", "titleAccent": "25 projects", "subtitle": "Delivered homes and industrial hubs across Nallasopara and Virar." },
+  "presence": { "title": "Where We Build", "subtitle": "Our Roots Run Through the Western Suburbs" },
+  "legacy": {
+    "title": "A Legacy of",
+    "titleAccent": "30+ Projects",
+    "subtitle": "From the foundation to the next landmark, the journey continues",
+    "stats": [
+      { "value": 29, "label": "Residential" },
+      { "value": 3, "label": "Industrial" }
+    ]
+  },
   "redevelopment": {
-    "title": "Is your society ready for a new beginning?",
-    "subtitle": "We are rebuilding Sai Nidhi CHS and Laxmiben Chheda CHSL right now.",
+    "title": "Ready to transform your society?",
+    "subtitle": "We’re helping societies move towards better-built, modern homes through redevelopment.",
     "steps": [
       { "icon": "users", "title": "Meet", "text": "Society meeting & feasibility" },
       { "icon": "file-check", "title": "Agree", "text": "Clear, legally vetted terms" },
@@ -41,6 +50,11 @@
     ]
   },
   "testimonials": { "title": "Kind words from our families" },
+  "contact": {
+    "title": "Ready to find your",
+    "titleAccent": "next home?",
+    "subtitle": "Tell us what you're looking for. Let’s find a Deep Group project that fits."
+  },
   "cta": {
     "title": "Visit a project",
     "titleAccent": "this weekend",

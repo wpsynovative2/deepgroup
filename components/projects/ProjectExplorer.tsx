@@ -37,7 +37,7 @@ export function ProjectExplorer({ projects, stations, lock }: Props) {
   const lockStation = lock?.station;
   const lockCategory = lock?.category;
   const scoped = useMemo(
-    () => projects.filter((p) => (!lockStation || p.station === lockStation) && (!lockCategory || p.category === lockCategory)),
+    () => projects.filter((p) => (!lockStation || p.station === lockStation) && (!lockCategory || p.categories.includes(lockCategory))),
     [projects, lockStation, lockCategory],
   );
   const results = useMemo(() => applyFilters(scoped, f), [scoped, f]);
@@ -61,7 +61,7 @@ export function ProjectExplorer({ projects, stations, lock }: Props) {
   };
   const clear = () => update({ sort: f.sort });
 
-  const cats = (Object.keys(CAT_LABEL) as Category[]).filter((c) => scoped.some((p) => p.category === c));
+  const cats = (Object.keys(CAT_LABEL) as Category[]).filter((c) => scoped.some((p) => p.categories.includes(c)));
   const statuses = (Object.keys(STATUS_LABEL) as Status[]).filter((s) => scoped.some((p) => p.status === s));
   const scopedStations = stations.filter((s) => scoped.some((p) => p.station === s.slug));
 

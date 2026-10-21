@@ -18,6 +18,9 @@ import { faqLd, graph } from "@/lib/seo/jsonld";
 
 export const metadata = buildMetadata({ ...getPageSeo("/redevelopment"), path: "/redevelopment" });
 
+/** Societies listed by name only (no project page yet) leave out slug, image, society and location. */
+type Society = { name: string; status: string; slug?: string; image?: string; society?: string; location?: string };
+
 export default function RedevelopmentPage() {
   const r = getPage("redevelopment");
   const faqs = getFaqs("redevelopment");
@@ -54,7 +57,7 @@ export default function RedevelopmentPage() {
 
       <section className="section-y bg-white">
         <div className="container-x">
-          <SectionHeading title="Why" accent="redevelop?" subtitle="What your society gains." />
+          <SectionHeading title="Why" accent="redevelop?" subtitle={r.benefitsSubtitle} />
           <div className="mt-12">
             <IconCards items={r.benefits} />
           </div>
@@ -112,25 +115,38 @@ export default function RedevelopmentPage() {
       <section className="section-y bg-white">
         <div className="container-x">
           <SectionHeading title="Societies we're" accent="rebuilding" />
-          <ul className="mx-auto mt-12 grid max-w-4xl gap-6 md:grid-cols-2">
-            {r.completed.map((c, i) => (
+          <ul className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {(r.completed as Society[]).map((c, i) => (
               <li key={c.name} className="group relative overflow-hidden rounded-3xl border border-line bg-white transition hover:border-gold-500" data-reveal style={{ "--d": i * 120 } as React.CSSProperties}>
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <FitImage src={c.image} alt={`${c.name}, ${c.location}`} sizes="(min-width: 768px) 33vw, 100vw" className="transition duration-1000 group-hover:scale-105" />
+                <div className="relative aspect-[4/3] overflow-hidden bg-cream">
+                  {c.image ? (
+                    <FitImage src={c.image} alt={`${c.name}, ${c.location}`} sizes="(min-width: 1024px) 380px, (min-width: 768px) 50vw, 100vw" className="transition duration-1000 group-hover:scale-105" />
+                  ) : (
+                    // No photo yet: monogram placeholder.
+                    <span aria-hidden className="grid h-full place-items-center font-script text-7xl text-gold-500/60">
+                      {c.name.replace(/^Deep /, "").charAt(0)}
+                    </span>
+                  )}
                   <span className={`absolute top-4 left-4 rounded-full px-3 py-1 text-xs font-semibold ${c.status === "Completed" ? "bg-white text-ink" : "bg-gold-100 text-gold-600"}`}>
                     {c.status}
                   </span>
                 </div>
-                <div className="flex items-center justify-between p-5">
+                <div className="flex flex-wrap items-center justify-between gap-3 p-5">
                   <span>
-                    <Link href={`/projects/${c.slug}`} className="block font-display text-xl text-brand-700 after:absolute after:inset-0">
-                      {c.name}
-                    </Link>
-                    <span className="text-sm text-muted">{c.location}</span>
+                    {c.slug ? (
+                      <Link href={`/projects/${c.slug}`} className="block font-display text-xl text-brand-700 after:absolute after:inset-0">
+                        {c.name}
+                      </Link>
+                    ) : (
+                      <span className="block font-display text-xl text-brand-700">{c.name}</span>
+                    )}
+                    {c.location ? <span className="text-sm text-muted">{c.location}</span> : null}
                   </span>
-                  <span className="flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-sm text-brand-700">
-                    <Users className="size-4 text-gold-500" aria-hidden /> {c.society}
-                  </span>
+                  {c.society ? (
+                    <span className="flex items-center gap-1.5 rounded-full bg-cream px-3 py-1.5 text-sm text-brand-700">
+                      <Users className="size-4 text-gold-500" aria-hidden /> {c.society}
+                    </span>
+                  ) : null}
                 </div>
               </li>
             ))}

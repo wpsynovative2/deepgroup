@@ -5,7 +5,9 @@ import { ListingTemplate } from "@/components/projects/ListingTemplate";
 import { PageHero } from "@/components/layout/PageHero";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { CtaBand } from "@/components/home/CtaBand";
-import { getAllProjects, getNavCategories, getProjectSummaries } from "@/lib/data/projects";
+import { TrackRecord } from "@/components/projects/TrackRecord";
+import { getLegacy } from "@/lib/data/content";
+import { getAllProjects, getNavCategories, getProjectSummaries, inCategory } from "@/lib/data/projects";
 import { getActiveStations } from "@/lib/data/stations";
 import { buildMetadata } from "@/lib/seo/metadata";
 
@@ -13,7 +15,7 @@ export const dynamicParams = false;
 
 const SEO: Record<string, { title: string; noun: string }> = {
   residential: { title: "Flats in Nalasopara, Virar & Vasai", noun: "residential projects" },
-  commercial: { title: "Commercial Shops & Offices: Coming Soon", noun: "commercial projects" },
+  commercial: { title: "Shops, Showrooms & Offices in Nalasopara & Vasai", noun: "commercial projects" },
   industrial: { title: "Industrial Galas on NH 48", noun: "industrial projects" },
 };
 
@@ -48,7 +50,7 @@ export default async function TypePage({ params }: PageProps<"/projects/type/[ca
 
   if (c.comingSoon) return <ComingSoon title={c.title} accent={c.accent} blurb={c.blurb} crumbs={crumbs} />;
 
-  const here = getAllProjects().filter((p) => p.category === c.slug);
+  const here = getAllProjects().filter((p) => inCategory(p, c.slug));
   return (
     <ListingTemplate
       title={c.title}
@@ -59,7 +61,24 @@ export default async function TypePage({ params }: PageProps<"/projects/type/[ca
       stations={getActiveStations().map(({ slug, name, count }) => ({ slug, name, count }))}
       lock={{ category: c.slug }}
       heroImage={here[0]?.images.cover}
-      stats={[{ value: String(here.length), label: here.length === 1 ? "Project" : "Projects" }]}
+      stats={[{ value: String(c.count), label: c.count === 1 ? "Project" : "Projects" }]}
+      actions={
+        c.chips ? (
+          <>
+            <ul className="mb-6 flex flex-wrap gap-2">
+              {c.chips.map((label) => (
+                <li key={label} className="rounded-full border border-gold-500/30 bg-white/70 px-4 py-2 text-sm">
+                  {label}
+                </li>
+              ))}
+            </ul>
+            <CtaButton size="lg" source={`/projects/type/${c.slug}`} title="Register your interest" message={`I'm interested in Deep Group's ${c.slug} spaces.`}>
+              Register your interest
+            </CtaButton>
+          </>
+        ) : null
+      }
+      after={<TrackRecord title={`Our ${c.slug}`} accent="track record" items={getLegacy().filter((p) => p.type === c.slug)} />}
     />
   );
 }

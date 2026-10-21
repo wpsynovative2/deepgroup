@@ -17,12 +17,14 @@ type Props = {
   lock?: { station?: string; category?: Category };
   heroImage?: { src: string; alt: string };
   stats?: Array<{ value: string; label: string }>;
+  /** Extra hero content under the stats, e.g. chips and a CTA. */
+  actions?: ReactNode;
   after?: ReactNode;
   ld?: object[];
 };
 
-export function ListingTemplate({ title, accent, subtitle, crumbs, projects, stations, lock, heroImage, stats, after, ld = [] }: Props) {
-  const scoped = projects.filter((p) => (!lock?.station || p.station === lock.station) && (!lock?.category || p.category === lock.category));
+export function ListingTemplate({ title, accent, subtitle, crumbs, projects, stations, lock, heroImage, stats, actions, after, ld = [] }: Props) {
+  const scoped = projects.filter((p) => (!lock?.station || p.station === lock.station) && (!lock?.category || p.categories.includes(lock.category)));
   return (
     <>
       <JsonLd data={graph(itemListLd(scoped.map((p) => p.slug)), ...ld)} />
@@ -37,6 +39,7 @@ export function ListingTemplate({ title, accent, subtitle, crumbs, projects, sta
             ))}
           </dl>
         ) : null}
+        {actions ? <div className="mt-6">{actions}</div> : null}
       </PageHero>
       <section className="section-y !pt-14 bg-white">
         <div className="container-x">

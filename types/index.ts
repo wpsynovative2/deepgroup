@@ -10,6 +10,8 @@ export type ProjectSummary = {
   name: string;
   tagline: string;
   category: Category;
+  /** Primary category plus `alsoListedIn`; use this for filtering. */
+  categories: Category[];
   status: Status;
   featured: boolean;
   station: string;

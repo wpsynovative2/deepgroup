@@ -62,12 +62,12 @@ export function CategoryTiles() {
                 <Icon name={c.icon} className="size-8" />
               </span>
               <h3 className="mt-6 text-2xl transition-colors group-hover:text-white">{c.title}</h3>
-              <p className="mt-2 text-muted transition-colors group-hover:text-white/80">{c.blurb}</p>
-              <p className="mt-4 text-sm font-medium text-gold-600 transition-colors group-hover:text-gold-200">
-                {c.comingSoon ? "Register your interest" : `${c.count} ${c.count === 1 ? "project" : "projects"}`}
-              </p>
-              <span className="mt-auto grid size-11 place-items-center rounded-full border border-brand-700/20 text-brand-700 transition-all duration-500 group-hover:w-32 group-hover:border-white/40 group-hover:text-white">
-                <ArrowRight className="size-4" aria-hidden />
+              <p className="mt-2 text-muted transition-colors group-hover:text-white/80">{c.tileBlurb}</p>
+              {c.comingSoon ? (
+                <p className="mt-4 text-sm font-medium text-gold-600 transition-colors group-hover:text-gold-200">Register your interest</p>
+              ) : null}
+              <span className="mt-auto inline-flex h-11 items-center gap-2 rounded-full border border-brand-700/20 px-5 text-sm font-medium text-brand-700 transition-all duration-500 group-hover:gap-4 group-hover:border-white/40 group-hover:text-white">
+                Explore <ArrowRight className="size-4" aria-hidden />
               </span>
             </Link>
           ))}

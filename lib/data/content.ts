@@ -24,9 +24,13 @@ export const getAmenities = () => amenities;
 export const getAmenity = (id: string) => amenities.find((a) => a.id === id);
 export const getTestimonials = () => testimonials as Array<{ name: string; project: string; quote: string; rating?: number }>;
 export const getCategoryContent = () => categories as Array<{
-  slug: "residential" | "commercial" | "industrial"; title: string; accent: string; blurb: string; icon: string; comingSoon: boolean;
+  slug: "residential" | "commercial" | "industrial"; title: string; accent: string; blurb: string; tileBlurb: string; icon: string; comingSoon: boolean; chips?: string[];
 }>;
-export const getLegacy = () => legacy as Array<{ name: string; locality: string; type: "residential" | "industrial" }>;
+/** Projects without a detail page: delivered ones, plus a few ongoing ones listed by name only. */
+export const getLegacy = () => legacy as Array<{
+  name: string; locality?: string; type: "residential" | "industrial"; station?: string; status?: "ongoing";
+}>;
+export const getDelivered = () => getLegacy().filter((p) => p.status !== "ongoing");
 export const getFaqs = <K extends keyof typeof faqs>(page: K) => faqs[page];
 export const getSeo = () => seo;
 export const getPageSeo = (path: keyof typeof seo.pages) => seo.pages[path];

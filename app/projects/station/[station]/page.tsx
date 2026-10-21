@@ -3,6 +3,8 @@ import { TrainFront } from "lucide-react";
 import { ListingTemplate } from "@/components/projects/ListingTemplate";
 import { Accordion } from "@/components/ui/Accordion";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { TrackRecord } from "@/components/projects/TrackRecord";
+import { getLegacy } from "@/lib/data/content";
 import { getAllProjects, getProjectSummaries } from "@/lib/data/projects";
 import { getActiveStations, getStationBySlug } from "@/lib/data/stations";
 import { buildMetadata } from "@/lib/seo/metadata";
@@ -55,18 +57,21 @@ export default async function StationPage({ params }: PageProps<"/projects/stati
       ]}
       ld={faqs.length ? [faqLd(faqs)] : []}
       after={
-        faqs.length ? (
-          <section className="section-y bg-cream">
-            <div className="container-x grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
-              <SectionHeading align="left" title="Getting there from" accent={s.name}>
-                <p className="mt-4 flex items-center gap-2 text-muted">
-                  <TrainFront className="size-5 text-gold-500" aria-hidden /> Fast locals to Dadar & Churchgate
-                </p>
-              </SectionHeading>
-              <Accordion items={faqs} />
-            </div>
-          </section>
-        ) : null
+        <>
+          <TrackRecord title="Our track record in" accent={s.name} items={getLegacy().filter((p) => p.station === s.slug)} />
+          {faqs.length ? (
+            <section className="section-y bg-cream">
+              <div className="container-x grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+                <SectionHeading align="left" title="Getting there from" accent={s.name}>
+                  <p className="mt-4 flex items-center gap-2 text-muted">
+                    <TrainFront className="size-5 text-gold-500" aria-hidden /> Fast locals to Dadar & Churchgate
+                  </p>
+                </SectionHeading>
+                <Accordion items={faqs} />
+              </div>
+            </section>
+          ) : null}
+        </>
       }
     />
   );

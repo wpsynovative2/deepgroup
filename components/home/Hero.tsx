@@ -54,7 +54,7 @@ export function Hero({ stations, categories, projectCount }: Props) {
               {hero.primaryCta}
               <ArrowRight className="size-4 transition-transform group-hover/btn:translate-x-1" aria-hidden />
             </ButtonLink>
-            <CtaButton source="home-hero" intent="site-visit" variant="accent" size="lg">
+            <CtaButton source="home-hero" intent="enquiry" variant="accent" size="lg">
               {hero.secondaryCta}
             </CtaButton>
           </div>

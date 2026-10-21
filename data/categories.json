@@ -1,5 +1,5 @@
 [
-  { "slug": "residential", "title": "Residential", "accent": "homes", "blurb": "1 & 2 BHK homes with rooftop amenities.", "icon": "home", "comingSoon": false },
-  { "slug": "commercial", "title": "Commercial", "accent": "spaces", "blurb": "Shops and offices near the station.", "icon": "store", "comingSoon": true },
-  { "slug": "industrial", "title": "Industrial", "accent": "hubs", "blurb": "Galas and plots built for business.", "icon": "factory", "comingSoon": false }
+  { "slug": "residential", "title": "Residential", "accent": "Homes", "blurb": "1 & 2 BHK homes that bring quality, great amenities, and functional planning together.", "tileBlurb": "Built for the way you live", "icon": "home", "comingSoon": false },
+  { "slug": "industrial", "title": "Industrial", "accent": "Hubs", "blurb": "Purpose-built galas for businesses to scale.", "tileBlurb": "Built for the way you work", "icon": "factory", "comingSoon": false },
+  { "slug": "commercial", "title": "Commercial", "accent": "Spaces", "blurb": "Built for businesses, planned for visibility, and positioned for what comes next.", "tileBlurb": "Built for the way business moves", "icon": "store", "comingSoon": false, "chips": ["Retail Spaces", "Showrooms", "Offices"] }
 ]

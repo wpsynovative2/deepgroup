@@ -53,7 +53,7 @@ export function AboutTeaser() {
           </ul>
           <div className="mt-8 flex items-center gap-6" data-reveal>
             <ButtonLink href="/about-us" variant="outline" className="whitespace-nowrap">
-              About Deep Group <ArrowRight className="size-4" aria-hidden />
+              {about.cta} <ArrowRight className="size-4" aria-hidden />
             </ButtonLink>
             <span className="hidden font-script text-3xl text-gold-600 sm:inline">Deep Group</span>
           </div>

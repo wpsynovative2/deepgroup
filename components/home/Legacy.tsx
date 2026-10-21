@@ -1,5 +1,5 @@
 import { CheckCircle2, Factory, Building } from "lucide-react";
-import { getLegacy, getPage } from "@/lib/data/content";
+import { getDelivered, getPage } from "@/lib/data/content";
 import { CountUp } from "@/components/decor/CountUp";
 import { Ornament } from "@/components/decor/Ornament";
 import { Wave } from "@/components/decor/Wave";
@@ -11,8 +11,7 @@ const pairs = <T,>(xs: T[]) => Array.from({ length: Math.ceil(xs.length / 2) }, 
 /** Delivered projects from the brochures' "Deep Group of success" pages. */
 export function Legacy({ tone = "dark" }: { tone?: "dark" | "light" }) {
   const { legacy } = getPage("home");
-  const items = getLegacy();
-  const industrial = items.filter((i) => i.type === "industrial").length;
+  const items = getDelivered();
   const dark = tone === "dark";
 
   return (
@@ -27,10 +26,7 @@ export function Legacy({ tone = "dark" }: { tone?: "dark" | "light" }) {
           </h2>
           <p className={dark ? "mt-4 text-lg text-white/70" : "mt-4 text-lg text-muted"}>{legacy.subtitle}</p>
           <dl className="mt-8 flex gap-4">
-            {[
-              { value: items.length - industrial, label: "Residential" },
-              { value: industrial, label: "Industrial hubs" },
-            ].map((s) => (
+            {legacy.stats.map((s) => (
               <div key={s.label} className={dark ? "rounded-2xl border border-white/15 bg-white/5 px-5 py-4" : "rounded-2xl border border-line bg-cream px-5 py-4"}>
                 <dd className={dark ? "font-display text-4xl text-gold-400" : "font-display text-4xl text-brand-700"}>
                   <CountUp value={s.value} />

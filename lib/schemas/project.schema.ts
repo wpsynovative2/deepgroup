@@ -12,6 +12,8 @@ export const ProjectSchema = z
     tagline: z.string(),
     description: z.string().optional(),
     category: z.enum(CATEGORIES),
+    /** Extra category pages this project also appears on (e.g. residential towers with shops → commercial). */
+    alsoListedIn: z.array(z.enum(CATEGORIES)).default([]),
     subType: z.string(),
     status: z.enum(STATUSES),
     featured: z.boolean().default(false),

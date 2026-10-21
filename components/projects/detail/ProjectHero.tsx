@@ -4,6 +4,7 @@ import { CalendarDays, IndianRupee, LayoutGrid, MapPin, ShieldCheck } from "luci
 import type { Project } from "@/types";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { StatusBadge } from "@/components/ui/Badge";
+import { CompletionBar } from "@/components/ui/Completion";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { LeafSprig } from "@/components/decor/Botanical";
 import { formatConfigs, possessionLabel } from "@/lib/utils";
@@ -68,6 +69,10 @@ export function ProjectHero({ p, stationName }: { p: Project; stationName: strin
               </div>
             ))}
           </dl>
+
+          {p.completion ? (
+            <CompletionBar completion={p.completion} tone="light" className="hero-rise mt-5 max-w-md" style={{ "--d": 450 } as React.CSSProperties} />
+          ) : null}
 
           <div className="hero-rise mt-8 flex flex-wrap gap-3" style={{ "--d": 500 } as React.CSSProperties}>
             <CtaButton project={p.name} intent="site-visit" source={`/projects/${p.slug}#hero`} variant="light" size="lg">

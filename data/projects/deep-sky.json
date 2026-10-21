@@ -7,6 +7,7 @@
   "alsoListedIn": ["commercial"],
   "subType": "apartments",
   "status": "ongoing",
+  "completion": { "percent": 80 },
   "featured": true,
   "order": 1,
   "station": "vasai-road",

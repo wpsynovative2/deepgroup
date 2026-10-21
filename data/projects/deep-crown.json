@@ -7,6 +7,7 @@
   "alsoListedIn": ["commercial"],
   "subType": "apartments",
   "status": "ongoing",
+  "completion": { "percent": 100, "ocReceived": true },
   "featured": true,
   "order": 3,
   "station": "nallasopara",

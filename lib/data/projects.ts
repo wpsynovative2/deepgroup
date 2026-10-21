@@ -81,6 +81,7 @@ export function toSummary(p: Project): ProjectSummary {
     priceDisplay: p.price.display,
     possession: p.possession ?? null,
     possessionLabel: possessionLabel(p.status, p.possession),
+    completion: p.completion ?? null,
     rera: Boolean(p.rera?.length),
     cover: p.images.cover,
     highlights: p.highlights,

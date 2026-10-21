@@ -23,6 +23,7 @@ export type ProjectSummary = {
   priceDisplay: string;
   possession: string | null;
   possessionLabel: string;
+  completion: { percent: number; ocReceived: boolean } | null;
   rera: boolean;
   cover: { src: string; alt: string };
   highlights: string[];

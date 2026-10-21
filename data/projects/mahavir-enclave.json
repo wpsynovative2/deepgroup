@@ -6,6 +6,7 @@
   "category": "residential",
   "subType": "apartments",
   "status": "ongoing",
+  "completion": { "percent": 80 },
   "featured": true,
   "order": 6,
   "station": "vasai-road",

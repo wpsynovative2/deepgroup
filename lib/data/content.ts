@@ -29,6 +29,7 @@ export const getCategoryContent = () => categories as Array<{
 /** Projects without a detail page: delivered ones, plus a few ongoing ones listed by name only. */
 export const getLegacy = () => legacy as Array<{
   name: string; locality?: string; type: "residential" | "industrial"; station?: string; status?: "ongoing";
+  completion?: { percent: number; ocReceived?: boolean };
 }>;
 export const getDelivered = () => getLegacy().filter((p) => p.status !== "ongoing");
 export const getFaqs = <K extends keyof typeof faqs>(page: K) => faqs[page];

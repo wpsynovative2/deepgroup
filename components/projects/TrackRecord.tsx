@@ -1,7 +1,8 @@
 import { Building, CheckCircle2, Clock, Factory } from "lucide-react";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { CompletionBar, type Completion } from "@/components/ui/Completion";
 
-type Item = { name: string; locality?: string; type: "residential" | "industrial"; status?: "ongoing" };
+type Item = { name: string; locality?: string; type: "residential" | "industrial"; status?: "ongoing"; completion?: Completion };
 
 /** Name-only list of projects from data/legacy.json, shown under the project grid on station and category pages. */
 export function TrackRecord({ title, accent, items }: { title: string; accent: string; items: Item[] }) {
@@ -23,7 +24,7 @@ export function TrackRecord({ title, accent, items }: { title: string; accent: s
                 <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-gold-100 text-brand-700">
                   <I className="size-5" strokeWidth={1.5} aria-hidden />
                 </span>
-                <span className="min-w-0">
+                <span className="min-w-0 flex-1">
                   <span className="block font-display text-lg leading-tight text-brand-700">{p.name}</span>
                   {p.locality ? <span className="mt-0.5 block text-xs text-muted">{p.locality}</span> : null}
                   <span className="mt-1.5 flex items-center gap-1 text-[0.7rem] text-gold-600">
@@ -37,6 +38,7 @@ export function TrackRecord({ title, accent, items }: { title: string; accent: s
                       </>
                     )}
                   </span>
+                  {p.completion ? <CompletionBar completion={p.completion} className="mt-2" /> : null}
                 </span>
               </li>
             );

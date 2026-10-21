@@ -24,5 +24,5 @@
   { "name": "Apple Industrial Hub (Phase I)", "locality": "NH 8, Pelhar, Nallasopara (E)", "type": "industrial", "station": "nallasopara" },
   { "name": "Apple Industrial Hub (Phase II)", "locality": "NH 8, Pelhar, Nallasopara (E)", "type": "industrial", "station": "nallasopara" },
   { "name": "Asian Industrial Hub", "locality": "NH 8, Shirsad Phata, Virar (E)", "type": "industrial", "station": "virar" },
-  { "name": "Deep Vaibhav", "type": "residential", "status": "ongoing" }
+  { "name": "Deep Vaibhav", "type": "residential", "status": "ongoing", "completion": { "percent": 30 } }
 ]

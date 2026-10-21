@@ -6,6 +6,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Carousel } from "@/components/ui/Carousel";
 import { FitImage } from "@/components/ui/FitImage";
 import { StatusBadge } from "@/components/ui/Badge";
+import { CompletionBar } from "@/components/ui/Completion";
 
 export type SpotlightProject = ProjectSummary & { overview: string; floors?: string };
 
@@ -81,6 +82,8 @@ function Spotlight({ p }: { p: SpotlightProject }) {
             </div>
           ))}
         </dl>
+
+        {p.completion ? <CompletionBar completion={p.completion} className="mt-6" /> : null}
 
         <span className="mt-auto inline-flex items-center gap-2 pt-8 font-medium text-brand-700 transition-all group-hover:gap-3">
           View project <ArrowRight className="size-4" aria-hidden />

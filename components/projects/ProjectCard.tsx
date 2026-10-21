@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowUpRight, CalendarDays, LayoutGrid, TrainFront } from "lucide-react";
 import type { ProjectSummary } from "@/types";
 import { StatusBadge } from "@/components/ui/Badge";
+import { CompletionBar } from "@/components/ui/Completion";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { formatPrice } from "@/lib/utils";
 
@@ -70,6 +71,7 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
             </div>
           </div>
         </dl>
+        {p.completion ? <CompletionBar completion={p.completion} className="mt-4" /> : null}
         <div className="mt-auto flex items-center justify-between pt-5">
           <span className="text-sm font-medium text-brand-700">View details</span>
           {enquire ? (

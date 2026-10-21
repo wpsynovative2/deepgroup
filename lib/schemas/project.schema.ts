@@ -52,6 +52,10 @@ export const ProjectSchema = z
       onRequest: z.boolean().default(false),
     }),
     possession: z.string().regex(/^\d{4}-\d{2}$/).optional(),
+    /** Construction progress as reported by the site team. `ocReceived` means the occupancy certificate is in hand. */
+    completion: z
+      .object({ percent: z.number().int().min(0).max(100), ocReceived: z.boolean().default(false) })
+      .optional(),
     landParcelAcres: z.number().optional(),
     towers: z.number().optional(),
     floors: z.string().optional(),

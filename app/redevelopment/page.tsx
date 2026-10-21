@@ -11,7 +11,9 @@ import { Wave } from "@/components/decor/Wave";
 import { LeafSprig } from "@/components/decor/Botanical";
 import { RedevEnquiryForm } from "@/components/redevelopment/RedevEnquiryForm";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { getFaqs, getPage, getPageSeo, getSite } from "@/lib/data/content";
+import { CompletionBar } from "@/components/ui/Completion";
+import { getFaqs, getLegacy, getPage, getPageSeo, getSite } from "@/lib/data/content";
+import { getProjectBySlug } from "@/lib/data/projects";
 import { getActiveStations } from "@/lib/data/stations";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { faqLd, graph } from "@/lib/seo/jsonld";
@@ -20,6 +22,10 @@ export const metadata = buildMetadata({ ...getPageSeo("/redevelopment"), path: "
 
 /** Societies listed by name only (no project page yet) leave out slug, image, society and location. */
 type Society = { name: string; status: string; slug?: string; image?: string; society?: string; location?: string };
+
+/** Progress comes from the project file, or from data/legacy.json for societies without a project page. */
+const completionOf = (c: Society) =>
+  (c.slug ? getProjectBySlug(c.slug)?.completion : getLegacy().find((l) => l.name === c.name)?.completion) ?? null;
 
 export default function RedevelopmentPage() {
   const r = getPage("redevelopment");
@@ -147,6 +153,7 @@ export default function RedevelopmentPage() {
                       <Users className="size-4 text-gold-500" aria-hidden /> {c.society}
                     </span>
                   ) : null}
+                  {completionOf(c) ? <CompletionBar completion={completionOf(c)!} className="w-full" /> : null}
                 </div>
               </li>
             ))}

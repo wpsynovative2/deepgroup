@@ -25,7 +25,7 @@
   {
     "slug": "sourcing-manager",
     "title": "Sourcing Manager",
-    "department": "Sales",
+    "department": "Sourcing",
     "location": "Nallasopara East",
     "type": "FULL_TIME",
     "experience": "2–5 years",
@@ -44,6 +44,30 @@
     ],
     "postedAt": "2026-09-10",
     "validThrough": "2026-12-15",
+    "open": true
+  },
+  {
+    "slug": "presales-telecaller",
+    "title": "Presales Executive (Telecalling)",
+    "department": "Presale",
+    "location": "Nallasopara East",
+    "type": "FULL_TIME",
+    "experience": "6 months+",
+    "description": "Call and qualify enquiries for our residential projects and book site visits for the sales team.",
+    "responsibilities": [
+      "Call new and existing leads from ads, portals and walk-ins",
+      "Qualify buyers on budget, configuration and timeline",
+      "Schedule site visits and send follow-up reminders",
+      "Keep every call and status updated in the CRM"
+    ],
+    "requirements": [
+      "Minimum 6 months of telecalling experience, preferably in real estate",
+      "Clear and confident on the phone",
+      "Fluent in Hindi and Marathi; working English",
+      "Basic computer and CRM skills"
+    ],
+    "postedAt": "2026-10-21",
+    "validThrough": "2026-12-31",
     "open": true
   },
   {

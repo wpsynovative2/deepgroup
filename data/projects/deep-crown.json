@@ -7,7 +7,7 @@
   "alsoListedIn": ["commercial"],
   "subType": "apartments",
   "status": "ongoing",
-  "completion": { "percent": 100, "ocReceived": true },
+  "completion": { "percent": 100 },
   "featured": true,
   "order": 3,
   "station": "nallasopara",
@@ -49,7 +49,7 @@
     "floorPlans": []
   },
   "brochure": "/brochures/deep-crown.pdf",
-  "bookingPhone": "+91 77570 17592",
+  "bookingPhone": "+91 86001 00066",
   "faqs": [
     { "q": "Is Deep Crown RERA registered?", "a": "Yes. MahaRERA No. P99000054885." },
     { "q": "How far is Deep Crown from Nallasopara station?", "a": "About a 5-minute walk." }

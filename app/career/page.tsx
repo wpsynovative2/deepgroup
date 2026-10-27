@@ -13,6 +13,9 @@ import { buildMetadata } from "@/lib/seo/metadata";
 
 export const metadata = buildMetadata({ ...getPageSeo("/career"), path: "/career" });
 
+// Hiring (open positions) is hidden for now — set to true to show it again.
+const SHOW_OPENINGS = false;
+
 export default function CareerPage() {
   const c = getPage("career");
   const jobs = getOpenJobs();
@@ -27,9 +30,11 @@ export default function CareerPage() {
         crumbs={[{ name: "Career", href: "/career" }]}
         image={{ src: "/images/career/team.jpg", alt: "Site team reviewing a construction project" }}
       >
-        <ButtonLink href="#openings" size="lg">
-          See {jobs.length} open {jobs.length === 1 ? "role" : "roles"} <ArrowRight className="size-4" aria-hidden />
-        </ButtonLink>
+        {SHOW_OPENINGS && (
+          <ButtonLink href="#openings" size="lg">
+            See {jobs.length} open {jobs.length === 1 ? "role" : "roles"} <ArrowRight className="size-4" aria-hidden />
+          </ButtonLink>
+        )}
       </PageHero>
 
       <section className="section-y bg-white">
@@ -59,14 +64,16 @@ export default function CareerPage() {
         <Wave position="bottom" variant={2} className="text-white" />
       </section>
 
-      <section id="openings" className="section-y bg-white">
-        <div className="container-x max-w-4xl">
-          <SectionHeading title="Open" accent="positions" />
-          <div className="mt-10">
-            <JobList jobs={jobs} departments={departments} empty={c.empty} />
+      {SHOW_OPENINGS && (
+        <section id="openings" className="section-y bg-white">
+          <div className="container-x max-w-4xl">
+            <SectionHeading title="Open" accent="positions" />
+            <div className="mt-10">
+              <JobList jobs={jobs} departments={departments} empty={c.empty} />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
 
       <section id="apply" className="section-y grain bg-cream">
         <div className="container-x max-w-3xl">

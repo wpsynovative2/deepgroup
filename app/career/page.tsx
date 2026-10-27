@@ -25,7 +25,7 @@ export default function CareerPage() {
         accent={c.hero.titleAccent}
         subtitle={c.hero.subtitle}
         crumbs={[{ name: "Career", href: "/career" }]}
-        image={{ src: "/images/projects/deep-landmark/cover.jpg", alt: "" }}
+        image={{ src: "/images/career/team.jpg", alt: "Site team reviewing a construction project" }}
       >
         <ButtonLink href="#openings" size="lg">
           See {jobs.length} open {jobs.length === 1 ? "role" : "roles"} <ArrowRight className="size-4" aria-hidden />

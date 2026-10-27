@@ -8,7 +8,7 @@
     "badge": "Extraordinary Reach · Extraordinary Results ·"
   },
   "stats": [
-    { "value": 27, "suffix": "+", "label": "Years of success" },
+    { "value": 27, "suffix": "", "label": "Years of success" },
     { "value": 30, "suffix": "+", "label": "Projects delivered" },
     { "value": 7, "suffix": "", "label": "Current projects" },
     { "value": 3, "suffix": "", "label": "Industrial hubs delivered" }

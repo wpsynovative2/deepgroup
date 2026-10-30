@@ -1,0 +1,77 @@
+{
+  "slug": "deep-vaibhav",
+  "name": "Deep Vaibhav",
+  "tagline": "Luxury 1, 2 & 3 BHK residences in a G+22 heritage-styled tower on Achole Road",
+  "description": "Luxury is redefining the way you live: a magnificent G+22 tower with a heritage-styled elevation, wide balconies in every flat, a podium shopline and a rooftop terrace garden with a scenic lake view.",
+  "category": "residential",
+  "alsoListedIn": ["commercial"],
+  "subType": "apartments",
+  "status": "ongoing",
+  "completion": { "percent": 30 },
+  "featured": true,
+  "order": 8,
+  "station": "nallasopara",
+  "redevelopmentOf": "Paras CHS Ltd.",
+  "location": {
+    "address": "Paras CHS Ltd., Achole Road",
+    "locality": "Achole Road, Nalasopara East",
+    "city": "Palghar",
+    "state": "Maharashtra",
+    "pincode": "401209",
+    "mapQuery": "Achole Road Nallasopara East 401209",
+    "distanceFromStation": "900 m"
+  },
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }, { "label": "3 BHK" }],
+  "price": { "display": "Price on request", "onRequest": true },
+  "floors": "G+22",
+  "highlights": ["G+22 magnificent tower", "Wide balconies in each flat", "Rooftop terrace garden with lake view"],
+  "specifications": [
+    { "title": "Floor finishes", "icon": "layers", "items": ["Italian marble flooring in hall & passage", "Imported marble in rest of flat", "Decorative flooring in living deck", "Wood-finish anti-skid flooring on master bedroom round decks", "SS / glass railing for living & master bedroom decks"] },
+    { "title": "Kitchen", "icon": "cooking-pot", "items": ["Granite designer platform with SS sink", "Dado 2' 0\" above platform", "Exhaust fan & water purifier points", "Dishwasher & washing machine provision in dry yard"] },
+    { "title": "Bathrooms", "icon": "bath", "items": ["Jaquar Artize CP fittings", "Duravit (Germany) sanitaryware", "Italian / composite marble door frames", "Designer tiles on walls", "Shower cubicle with shower panel in master toilet", "Geyser & exhaust fan points"] },
+    { "title": "Doors", "icon": "door-open", "items": ["Biometric digital lock for main door", "Teakwood frames for main & bedroom doors", "Fire-resistant designer main door", "8' 0\" door height for all doors", "Veneer / laminated flush doors for bathrooms"] },
+    { "title": "Wall finish", "icon": "sparkles", "items": ["Mineral gypsum plaster on walls & ceiling", "Satin-finish paint on walls", "Melamine polish on doors"] },
+    { "title": "Electrical", "icon": "zap", "items": ["Concealed copper wiring with modular switches", "MCB & ELCB safety", "AC point in hall & all bedrooms", "TV / telephone points in living & master bedroom", "Foot lights in living & bedrooms", "Pre-wired internet in master bedroom"] }
+  ],
+  "amenities": ["terrace-garden", "yoga-deck", "open-gym", "kids-play-area", "senior-citizen-area", "jogging-track", "cricket-turf", "sitouts", "cctv", "power-backup", "lift", "stack-parking", "parking", "modular-kitchen", "shops"],
+  "connectivity": [
+    { "place": "Nallasopara railway station", "distance": "900 m", "type": "transport" },
+    { "place": "Vasai Link Road", "distance": "1.2 km", "type": "road" },
+    { "place": "Western Express Highway", "distance": "11 km", "type": "road" },
+    { "place": "Chandresh Lodha High School", "distance": "40 m", "type": "education" },
+    { "place": "Pancham School", "distance": "80 m", "type": "education" },
+    { "place": "Kapol School & College", "distance": "150 m", "type": "education" },
+    { "place": "Navneet Hospital", "distance": "450 m", "type": "health" },
+    { "place": "Alliance Hospital", "distance": "750 m", "type": "health" },
+    { "place": "Achole Talav", "distance": "650 m", "type": "park" },
+    { "place": "The Capital Mall", "distance": "5 min", "type": "shopping" },
+    { "place": "D-Mart", "distance": "2.5 km", "type": "shopping" }
+  ],
+  "images": {
+    "cover": { "src": "/images/projects/deep-vaibhav/cover.jpg", "alt": "Deep Vaibhav G+22 tower elevation on Achole Road, Nalasopara East" },
+    "gallery": [
+      { "src": "/images/projects/deep-vaibhav/elevation.jpg", "alt": "Deep Vaibhav magnificent heritage-styled elevation", "kind": "exterior" },
+      { "src": "/images/projects/deep-vaibhav/elevation-street.jpg", "alt": "Deep Vaibhav tower and podium shopline from the main road", "kind": "exterior" },
+      { "src": "/images/projects/deep-vaibhav/amenities.jpg", "alt": "Deep Vaibhav rooftop amenities: yoga zone, kids' play area, walk area and cricket turf", "kind": "amenity" },
+      { "src": "/images/projects/deep-vaibhav/terrace.jpg", "alt": "Terrace recreation area with endless views at Deep Vaibhav", "kind": "amenity" },
+      { "src": "/images/projects/deep-vaibhav/specs.jpg", "alt": "Deep Vaibhav specifications at a glance", "kind": "interior" },
+      { "src": "/images/projects/deep-vaibhav/location.jpg", "alt": "Deep Vaibhav location map near Nallasopara station and Achole Talav", "kind": "location" }
+    ],
+    "floorPlans": [
+      { "src": "/images/projects/deep-vaibhav/typical-floor.jpg", "alt": "Deep Vaibhav typical floor sale plan", "label": "Typical floor" }
+    ]
+  },
+  "brochure": "/brochures/deep-vaibhav.pdf",
+  "bookingPhone": "+91 70900 06655",
+  "faqs": [
+    { "q": "What configurations are available at Deep Vaibhav?", "a": "1, 2 & 3 BHK residences in a G+22 tower." },
+    { "q": "How far is Deep Vaibhav from Nallasopara station?", "a": "About 900 m, on the main Achole Road." },
+    { "q": "Which society is being redeveloped?", "a": "Paras CHS Ltd., Achole Road, Nallasopara East." }
+  ],
+  "seo": {
+    "title": "Deep Vaibhav: Luxury 1, 2 & 3 BHK Flats on Achole Road, Nalasopara East",
+    "description": "G+22 heritage-styled tower 900 m from Nallasopara station with wide balconies, Italian marble flooring and a rooftop terrace garden with lake view."
+  },
+  "publishedAt": "2026-10-30",
+  "updatedAt": "2026-10-30"
+}

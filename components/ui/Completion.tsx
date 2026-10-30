@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 
 export type Completion = { percent: number; ocReceived?: boolean };
 
+export const completionLabel = (c: Completion) => (c.ocReceived ? "OC received" : `${c.percent}% complete`);
+
 /** Construction progress bar. Once the OC is received the bar is full and says so instead of a percentage. */
 export function CompletionBar({
   completion,
@@ -15,7 +17,7 @@ export function CompletionBar({
   style?: React.CSSProperties;
 }) {
   const percent = completion.ocReceived ? 100 : completion.percent;
-  const label = completion.ocReceived ? "OC received" : `${percent}% complete`;
+  const label = completionLabel(completion);
   const light = tone === "light";
   return (
     <div className={className} style={style}>

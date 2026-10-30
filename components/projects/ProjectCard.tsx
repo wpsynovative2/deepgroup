@@ -1,9 +1,9 @@
 import { FitImage } from "@/components/ui/FitImage";
 import Link from "next/link";
-import { ArrowUpRight, CalendarDays, LayoutGrid, TrainFront } from "lucide-react";
+import { ArrowUpRight, CalendarDays, HardHat, LayoutGrid, TrainFront } from "lucide-react";
 import type { ProjectSummary } from "@/types";
 import { StatusBadge } from "@/components/ui/Badge";
-import { CompletionBar } from "@/components/ui/Completion";
+import { completionLabel } from "@/components/ui/Completion";
 import { CtaButton } from "@/components/ui/CtaButton";
 import { formatPrice } from "@/lib/utils";
 
@@ -14,7 +14,7 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
     <article
       data-reveal
       style={{ "--d": delay } as React.CSSProperties}
-      className="group relative flex flex-col overflow-hidden rounded-[1.25rem] border border-line bg-white transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-[0_30px_60px_-30px_rgba(101,7,39,.35)]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-line bg-white transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-[0_30px_60px_-30px_rgba(101,7,39,.35)]"
     >
       <div className="relative aspect-[4/3] overflow-hidden">
         <FitImage
@@ -63,15 +63,25 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
               <dd className="text-ink">{p.configs}</dd>
             </div>
           </div>
-          <div className="flex items-center gap-2">
-            <CalendarDays className="size-4 shrink-0 text-gold-500" aria-hidden />
-            <div>
-              <dt className="sr-only">Possession</dt>
-              <dd className="text-ink">{p.possessionLabel}</dd>
+          {/* Progress replaces the possession line so every card keeps the same height. */}
+          {p.completion ? (
+            <div className="flex items-center gap-2">
+              <HardHat className="size-4 shrink-0 text-gold-500" aria-hidden />
+              <div>
+                <dt className="sr-only">Construction progress</dt>
+                <dd className="font-semibold text-brand-700">{completionLabel(p.completion)}</dd>
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              <CalendarDays className="size-4 shrink-0 text-gold-500" aria-hidden />
+              <div>
+                <dt className="sr-only">Possession</dt>
+                <dd className="text-ink">{p.possessionLabel}</dd>
+              </div>
+            </div>
+          )}
         </dl>
-        {p.completion ? <CompletionBar completion={p.completion} className="mt-4" /> : null}
         <div className="mt-auto flex items-center justify-between pt-5">
           <span className="text-sm font-medium text-brand-700">View details</span>
           {enquire ? (

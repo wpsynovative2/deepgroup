@@ -1,16 +1,17 @@
 """
 Extracts project imagery (covers, gallery, floor plans, RERA QR codes) from the
-brochures in public/brochure/ and writes web-sized JPEGs to public/images/projects/<slug>/.
+brochures in public/brochure-havy/ and writes web-sized JPEGs to public/images/projects/<slug>/.
 
 Crops are fractions of the page: (left, top, right, bottom).
-Run: python scripts/extract-brochure-images.py   (needs: pip install pymupdf)
+Run: python scripts/extract-brochure-images.py [slug ...]   (needs: pip install pymupdf)
 """
 import io
 import os
+import sys
 import pymupdf  # PyMuPDF
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SRC = os.path.join(ROOT, "public", "brochure")
+SRC = os.path.join(ROOT, "public", "brochure-havy")
 OUT = os.path.join(ROOT, "public", "images", "projects")
 
 BROCHURES = {
@@ -21,6 +22,7 @@ BROCHURES = {
     "deep-landmark": "Deep landmark.pdf",
     "mahavir-enclave": "Deep mahavir enclave big brochure 28 Aug 2024.pdf",
     "sky-industrial-hub": "SKY INDUSTRIAL HUB BROCHURE  SPREAD V4.pdf",
+    "deep-vaibhav": "Deep Vaibhav.pdf",
 }
 
 FULL = (0, 0, 1, 1)
@@ -70,6 +72,16 @@ JOBS = {
         ("warehouse", 3, (0.0, 0.0, 1.0, 0.62), 1800),
         ("floor-plan", 6, FULL, 2000),
     ],
+    "deep-vaibhav": [
+        ("cover", 5, (0.14, 0.0, 0.62, 1.0), 1400),
+        ("elevation", 2, FULL, 1600),
+        ("elevation-street", 7, (0.5, 0.0, 1.0, 1.0), 1400),
+        ("amenities", 4, (0.555, 0.04, 0.98, 0.96), 1400),
+        ("terrace", 4, (0.04, 0.53, 0.55, 0.95), 1400),
+        ("location", 7, (0.0, 0.0, 0.5, 1.0), 1400),
+        ("specs", 6, (0.53, 0.06, 0.96, 0.7), 1400),
+        ("typical-floor", 8, (0.56, 0.05, 0.94, 0.68), 1600),
+    ],
 }
 
 
@@ -82,8 +94,10 @@ def render(doc, page_no, crop, max_w):
     return pix.tobytes("jpeg", jpg_quality=82)
 
 
-def main():
+def main(slugs):
     for slug, jobs in JOBS.items():
+        if slugs and slug not in slugs:
+            continue
         doc = pymupdf.open(os.path.join(SRC, BROCHURES[slug]))
         os.makedirs(os.path.join(OUT, slug), exist_ok=True)
         for name, page_no, crop, max_w in jobs:
@@ -94,4 +108,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1:])

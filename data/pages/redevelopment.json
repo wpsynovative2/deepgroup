@@ -38,6 +38,6 @@
   "completed": [
     { "name": "Deep Crown", "society": "Sai Nidhi CHS Ltd.", "location": "Chakradhar Nagar, Nalasopara West", "status": "Ongoing", "slug": "deep-crown", "image": "/images/projects/deep-crown/cover.jpg" },
     { "name": "Deep Landmark", "society": "Laxmiben Chheda CHSL", "location": "Gala Nagar, Nalasopara East", "status": "Ongoing", "slug": "deep-landmark", "image": "/images/projects/deep-landmark/cover.jpg" },
-    { "name": "Deep Vaibhav", "status": "Ongoing" }
+    { "name": "Deep Vaibhav", "society": "Paras CHS Ltd.", "location": "Achole Road, Nalasopara East", "status": "Ongoing", "slug": "deep-vaibhav", "image": "/images/projects/deep-vaibhav/cover.jpg" }
   ]
 }

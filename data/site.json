@@ -9,7 +9,11 @@
   "altPhone": "+91 86001 00066",
   "whatsapp": "918600100066",
   "email": "sales@deepgroups.in",
-  "cpDesk": { "phone": "+91 86001 00066", "phoneHref": "+918600100066", "email": "partners@deepgroups.in" },
+  "cpDesk": {
+    "phone": "+91 86001 00066",
+    "phoneHref": "+918600100066",
+    "email": "partners@deepgroups.in"
+  },
   "careersEmail": "careers@deepgroups.in",
   "foundingYear": "2000",
   "yearsOfSuccess": 27,
@@ -37,7 +41,8 @@
     "instagram": "https://www.instagram.com/deep_groupp?dlrf=YnA3OHdjcmh2eXl1",
     "facebook": "https://www.facebook.com/DeepGroupOfficial",
     "youtube": "https://youtube.com/@deepgroupbuildersanddevelopers?si=5_a1Lm4O2cCL_TmU",
-    "linkedin": "https://www.linkedin.com/company/deep-builder-and-developers/"
+    "linkedin": "https://www.linkedin.com/company/deep-builder-and-developers/",
+    "temp": "https://www.linkedin.com/company/deep-builder-and-developers/"
   },
   "defaultOgImage": "/images/hero/hero.jpg"
 }

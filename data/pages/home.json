@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "The Homes We Build",
-    "titleAccent": "Tell Our Story",
+    "title": "Building Better Homes.",
+    "titleAccent": "Creating Brighter Futures.",
     "subtitle": "Developing residential and industrial spaces along the Western Line",
     "primaryCta": "Explore Our Projects",
     "secondaryCta": "Enquire Now",
@@ -13,7 +13,7 @@
     { "value": 7, "suffix": "", "label": "Current projects" },
     { "value": 3, "suffix": "", "label": "Industrial hubs delivered" }
   ],
-  "marquee": ["Nalasopara", "Virar", "Vasai", "27+ years of success", "On-time delivery", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
+  "marquee": ["Nalasopara", "Virar", "Vasai", "27 years of success", "On-time delivery", "Rooftop amenities", "Well-planned layouts", "Society redevelopment"],
   "featured": { "title": "Our Projects", "subtitle": "You’re witnessing our evolution" },
   "categories": { "title": "What We Build" },
   "about": {
@@ -27,7 +27,7 @@
       { "icon": "sparkles", "label": "Good amenities" }
     ],
     "cta": "Discover Deep Group",
-    "yearsBadge": "27+"
+    "yearsBadge": "27"
   },
   "presence": { "title": "Where We Build", "subtitle": "Our Roots Run Through the Western Suburbs" },
   "legacy": {

@@ -7,6 +7,7 @@ import {
   Specifications,
 } from "@/components/projects/detail/Sections";
 import { Gallery } from "@/components/projects/detail/Gallery";
+import { PanoramaViewer } from "@/components/projects/detail/PanoramaViewer";
 import { FloorPlans } from "@/components/projects/detail/FloorPlans";
 import { LazyMap } from "@/components/projects/detail/LazyMap";
 import { ProjectCard } from "@/components/projects/ProjectCard";
@@ -46,12 +47,14 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const related = getRelatedProjects(p, 3).map(toSummary);
   const amenityLabels = p.amenities.map((a) => getAmenity(a)?.label).filter(Boolean) as string[];
   const projectNames = getAllProjects().map((x) => x.name);
+  const pano = p.images.panorama;
 
   const nav = [
     { id: "overview", label: "Overview" },
     ...(p.units.length ? [{ id: "configurations", label: "Configurations" }] : []),
     ...(p.specifications.length ? [{ id: "specifications", label: "Specifications" }] : []),
     { id: "amenities", label: "Amenities" },
+    ...(pano ? [{ id: "view-360", label: "360° view" }] : []),
     ...(p.images.gallery.length ? [{ id: "gallery", label: "Gallery" }] : []),
     ...(p.images.floorPlans.length ? [{ id: "floor-plans", label: "Floor plans" }] : []),
     { id: "location", label: "Location" },
@@ -71,6 +74,15 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
           <ConfigurationTable p={p} />
           <Specifications p={p} />
           <AmenitiesGrid p={p} />
+          {pano ? (
+            <section id="view-360" className="scroll-mt-40">
+              <DetailHeading title="360° aerial" accent="view" />
+              <p className="-mt-4 mb-6 max-w-2xl text-muted">
+                See {p.name} and its neighbourhood from above. Drag to look around, or go full screen.
+              </p>
+              <PanoramaViewer src={pano.src} srcSmall={pano.srcSmall} poster={pano.poster} alt={pano.alt} yaw={pano.yaw} pitch={pano.pitch} />
+            </section>
+          ) : null}
           {p.images.gallery.length ? (
             <section id="gallery" className="scroll-mt-40">
               <DetailHeading title="Gallery" />

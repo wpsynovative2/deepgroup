@@ -41,7 +41,8 @@
       { "src": "/images/projects/deep-landmark/lifestyle.jpg", "alt": "Deep Landmark lifestyle features: open gym, kids' play area, yoga zone", "kind": "amenity" },
       { "src": "/images/projects/deep-landmark/features.jpg", "alt": "Deep Landmark home features", "kind": "interior" }
     ],
-    "floorPlans": []
+    "floorPlans": [],
+    "panorama": { "src": "/images/projects/deep-landmark/panorama-6144.jpg", "srcSmall": "/images/projects/deep-landmark/panorama-4096.jpg", "poster": "/images/projects/deep-landmark/panorama-poster.jpg", "alt": "360° aerial drone view of Deep Landmark and its surroundings in Gala Nagar, Nalasopara East" }
   },
   "brochure": "/brochures/deep-landmark.pdf",
   "bookingPhone": "+91 86001 00066",

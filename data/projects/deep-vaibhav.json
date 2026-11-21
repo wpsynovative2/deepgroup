@@ -59,7 +59,8 @@
     ],
     "floorPlans": [
       { "src": "/images/projects/deep-vaibhav/typical-floor.jpg", "alt": "Deep Vaibhav typical floor sale plan", "label": "Typical floor" }
-    ]
+    ],
+    "panorama": { "src": "/images/projects/deep-vaibhav/panorama-6144.jpg", "srcSmall": "/images/projects/deep-vaibhav/panorama-4096.jpg", "poster": "/images/projects/deep-vaibhav/panorama-poster.jpg", "alt": "360° aerial drone view of Deep Vaibhav and its surroundings in Achole Road, Nalasopara East" }
   },
   "brochure": "/brochures/deep-vaibhav.pdf",
   "bookingPhone": "+91 70900 06655",

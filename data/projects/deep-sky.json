@@ -41,7 +41,8 @@
     "floorPlans": [
       { "src": "/images/projects/deep-sky/plan-1bhk.jpg", "alt": "1 BHK artistic view with French windows", "label": "1 BHK" },
       { "src": "/images/projects/deep-sky/plan-2bhk.jpg", "alt": "2 BHK artistic view", "label": "2 BHK" }
-    ]
+    ],
+    "panorama": { "src": "/images/projects/deep-sky/panorama-6144.jpg", "srcSmall": "/images/projects/deep-sky/panorama-4096.jpg", "poster": "/images/projects/deep-sky/panorama-poster.jpg", "alt": "360° aerial drone view of Deep Sky and its surroundings in Yashwant Smart City, Vasai East" }
   },
   "brochure": "/brochures/deep-sky.pdf",
   "bookingPhone": "+91 86001 00066",

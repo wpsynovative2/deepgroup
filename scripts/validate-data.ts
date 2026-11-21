@@ -34,7 +34,9 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".json"))) {
     slugs.add(p.slug);
     if (!stations.some((s) => s.slug === p.station)) throw new Error(`unknown station "${p.station}"`);
     for (const a of p.amenities) if (!amenityIds.has(a)) throw new Error(`unknown amenity "${a}"`);
+    const pano = p.images.panorama;
     const imgs = [p.images.cover, ...p.images.gallery, ...p.images.floorPlans].map((i) => i.src);
+    if (pano) imgs.push(pano.src, pano.srcSmall, pano.poster);
     for (const src of imgs) if (!fs.existsSync(path.join(root, "public", src))) throw new Error(`missing image ${src}`);
     for (const r of p.rera ?? []) if (r.qr && !fs.existsSync(path.join(root, "public", r.qr))) throw new Error(`missing RERA QR ${r.qr}`);
     if (p.brochure && !fs.existsSync(path.join(root, "public", p.brochure))) throw new Error(`missing brochure ${p.brochure}`);

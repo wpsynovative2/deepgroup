@@ -46,7 +46,8 @@
       { "src": "/images/projects/deep-crown/amenities.jpg", "alt": "Deep Crown rooftop amenities and features", "kind": "amenity" },
       { "src": "/images/projects/deep-crown/specs.jpg", "alt": "Deep Crown specifications", "kind": "interior" }
     ],
-    "floorPlans": []
+    "floorPlans": [],
+    "panorama": { "src": "/images/projects/deep-crown/panorama-6144.jpg", "srcSmall": "/images/projects/deep-crown/panorama-4096.jpg", "poster": "/images/projects/deep-crown/panorama-poster.jpg", "alt": "360° aerial drone view of Deep Crown and its surroundings in Chakradhar Nagar, Nalasopara West" }
   },
   "brochure": "/brochures/deep-crown.pdf",
   "bookingPhone": "+91 86001 00066",

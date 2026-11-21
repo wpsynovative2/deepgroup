@@ -345,7 +345,18 @@ Each station can also carry optional `intro` copy and `seo` fields for its landi
     ],
     "floorPlans": [
       { "src": "/images/projects/deep-heights-virar/fp-2bhk.jpg", "alt": "2 BHK floor plan, 690 sq ft carpet", "label": "2 BHK" }
-    ]
+    ],
+    // Optional 360° photo, shown only on the project page (never on cards). Drop the full-size
+    // original in public/360deg-images (git-ignored), map it in scripts/generate-panoramas.mjs and run
+    // `node scripts/generate-panoramas.mjs` to produce these three files. yaw/pitch (degrees) set the opening view.
+    "panorama": {
+      "src": "/images/projects/deep-heights-virar/panorama-6144.jpg",
+      "srcSmall": "/images/projects/deep-heights-virar/panorama-4096.jpg",
+      "poster": "/images/projects/deep-heights-virar/panorama-poster.jpg",
+      "alt": "360° aerial drone view of Deep Heights and its surroundings",
+      "yaw": 0,
+      "pitch": -20
+    }
   },
   "videoUrl": "https://www.youtube.com/watch?v=…",
   "brochure": "/brochures/deep-heights-virar.pdf",

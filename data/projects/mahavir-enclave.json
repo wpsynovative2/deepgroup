@@ -47,7 +47,8 @@
       { "src": "/images/projects/mahavir-enclave/plan-1bhk.jpg", "alt": "1 BHK, living 9'0\" × 14'0\", bedroom 9'0\" × 9'0\"", "label": "1 BHK" },
       { "src": "/images/projects/mahavir-enclave/plan-2bhk.jpg", "alt": "2 BHK, living 9'0\" × 15'0\", two bedrooms", "label": "2 BHK" },
       { "src": "/images/projects/mahavir-enclave/typical-floor.jpg", "alt": "Typical floor plan, Vastu-compliant layout", "label": "Typical floor" }
-    ]
+    ],
+    "panorama": { "src": "/images/projects/mahavir-enclave/panorama-6144.jpg", "srcSmall": "/images/projects/mahavir-enclave/panorama-4096.jpg", "poster": "/images/projects/mahavir-enclave/panorama-poster.jpg", "alt": "360° aerial drone view of Deep Mahavir Enclave and its surroundings in Evershine City, Vasai East" }
   },
   "brochure": "/brochures/mahavir-enclave.pdf",
   "bookingPhone": "+91 86001 00066",

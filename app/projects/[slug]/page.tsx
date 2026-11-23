@@ -4,7 +4,6 @@ import { ProjectHero } from "@/components/projects/detail/ProjectHero";
 import { SubNav } from "@/components/projects/detail/SubNav";
 import {
   AmenitiesGrid, ConfigurationTable, ConstructionUpdates, DetailHeading, LocationConnectivity, ProjectFaq, ProjectOverview, ReraBlock,
-  Specifications,
 } from "@/components/projects/detail/Sections";
 import { Gallery } from "@/components/projects/detail/Gallery";
 import { PanoramaViewer } from "@/components/projects/detail/PanoramaViewer";
@@ -52,7 +51,6 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
   const nav = [
     { id: "overview", label: "Overview" },
     ...(p.units.length ? [{ id: "configurations", label: "Configurations" }] : []),
-    ...(p.specifications.length ? [{ id: "specifications", label: "Specifications" }] : []),
     { id: "amenities", label: "Amenities" },
     ...(pano ? [{ id: "view-360", label: "360° view" }] : []),
     ...(p.images.gallery.length ? [{ id: "gallery", label: "Gallery" }] : []),
@@ -72,7 +70,6 @@ export default async function ProjectPage({ params }: PageProps<"/projects/[slug
         <div className="grid min-w-0 gap-20">
           <ProjectOverview p={p} />
           <ConfigurationTable p={p} />
-          <Specifications p={p} />
           <AmenitiesGrid p={p} />
           {pano ? (
             <section id="view-360" className="scroll-mt-40">

@@ -102,39 +102,6 @@ export function ConfigurationTable({ p }: { p: Project }) {
   );
 }
 
-export function Specifications({ p }: { p: Project }) {
-  if (!p.specifications.length) return null;
-  return (
-    <section id="specifications" className="scroll-mt-40">
-      <DetailHeading title="Specifications" />
-      <div className="grid gap-4 sm:grid-cols-2">
-        {p.specifications.map((g, i) => (
-          <div
-            key={g.title}
-            data-reveal
-            style={{ "--d": (i % 2) * 100 } as React.CSSProperties}
-            className="rounded-2xl border border-line bg-white p-6 transition hover:border-gold-500"
-          >
-            <p className="flex items-center gap-3 font-display text-xl text-brand-700">
-              <span className="grid size-11 place-items-center rounded-full bg-brand-700 text-gold-400">
-                <Icon name={g.icon} className="size-5" />
-              </span>
-              {g.title}
-            </p>
-            <ul className="mt-4 grid gap-2">
-              {g.items.map((it) => (
-                <li key={it} className="flex gap-2.5 text-sm text-muted">
-                  <Check className="mt-0.5 size-4 shrink-0 text-gold-500" aria-hidden /> {it}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 export function AmenitiesGrid({ p }: { p: Project }) {
   const items = p.amenities.map(getAmenity).filter(Boolean) as Array<{ id: string; label: string; icon: string }>;
   return (

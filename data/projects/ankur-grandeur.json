@@ -1,7 +1,7 @@
 {
   "slug": "ankur-grandeur",
   "name": "Ankur Grandeur",
-  "tagline": "1 BHK residences 6 minutes from Virar station",
+  "tagline": "1 & 2 BHK residences 6 minutes from Virar station",
   "description": "A 21-storey tower on the Virar–Nalasopara link road with a rooftop sky lawn and shops on the podium.",
   "category": "residential",
   "subType": "apartments",
@@ -19,7 +19,7 @@
     "mapQuery": "Ankur Grandeur Moregaon Nalasopara East 401209",
     "distanceFromStation": "6 min"
   },
-  "units": [{ "label": "1 BHK", "carpetAreaSqft": [348, 535] }],
+  "units": [{ "label": "1 BHK", "carpetAreaSqft": [348, 535] }, { "label": "2 BHK" }],
   "price": { "display": "Price on request", "onRequest": true },
   "floors": "21 floors",
   "rera": [{ "number": "P99000033095", "phase": "Building 3" }],
@@ -58,11 +58,11 @@
   "faqs": [
     { "q": "Is Ankur Grandeur RERA registered?", "a": "Yes. MahaRERA No. P99000033095." },
     { "q": "How far is Ankur Grandeur from Virar station?", "a": "About 6 minutes by road; Nalasopara station is about 11 minutes away." },
-    { "q": "What flat sizes are available?", "a": "1 BHK homes from about 348 to 535 sq ft RERA carpet area." }
+    { "q": "What flat sizes are available?", "a": "1 BHK homes from about 348 to 535 sq ft RERA carpet area, and 2 BHK homes (sizes on request)." }
   ],
   "seo": {
-    "title": "Ankur Grandeur: 1 BHK Flats in Moregaon, Nalasopara East",
-    "description": "MahaRERA-registered 1 BHK flats on the Virar–Nalasopara link road, 6 min from Virar station. Rooftop sky lawn, fitness area and kids' play area."
+    "title": "Ankur Grandeur: 1 & 2 BHK Flats in Moregaon, Nalasopara East",
+    "description": "MahaRERA-registered 1 & 2 BHK flats on the Virar–Nalasopara link road, 6 min from Virar station. Rooftop sky lawn, fitness area and kids' play area."
   },
   "publishedAt": "2025-06-11",
   "updatedAt": "2026-09-29"

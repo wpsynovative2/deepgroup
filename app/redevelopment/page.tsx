@@ -63,7 +63,7 @@ export default function RedevelopmentPage() {
 
       <section className="section-y bg-white">
         <div className="container-x">
-          <SectionHeading title="Why" accent="redevelop?" subtitle={r.benefitsSubtitle} />
+          <SectionHeading title="Why" accent="Redevelop?" subtitle={r.benefitsSubtitle} />
           <div className="mt-12">
             <IconCards items={r.benefits} />
           </div>
@@ -75,7 +75,7 @@ export default function RedevelopmentPage() {
         <Wave position="top" className="text-white" />
         <LeafSprig className="absolute bottom-10 -left-6 h-72 w-44 text-gold-400/20" />
         <div className="container-x">
-          <SectionHeading tone="dark" title="The" accent="process" subtitle={r.processNote} />
+          <SectionHeading tone="dark" title="The" accent="Process" subtitle={r.processNote} />
           <div className="mt-16">
             <NumberedProcess steps={r.process} tone="dark" />
           </div>
@@ -99,7 +99,7 @@ export default function RedevelopmentPage() {
             </figure>
           </div>
           <div>
-            <SectionHeading align="left" title="Complete" accent="transparency" />
+            <SectionHeading align="left" title="Complete" accent="Transparency" />
             <ul className="mt-8 grid gap-4">
               {r.transparency.map((t, i) => (
                 <li key={t.title} className="flex items-center gap-4 rounded-2xl bg-white p-5 shadow-sm" data-reveal style={{ "--d": i * 100 } as React.CSSProperties}>
@@ -120,7 +120,7 @@ export default function RedevelopmentPage() {
       {/* Completed & ongoing */}
       <section className="section-y bg-white">
         <div className="container-x">
-          <SectionHeading title="Societies we're" accent="rebuilding" />
+          <SectionHeading title="Societies We're" accent="Rebuilding" />
           <ul className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2 lg:grid-cols-3">
             {(r.completed as Society[]).map((c, i) => (
               <li key={c.name} className="group relative overflow-hidden rounded-3xl border border-line bg-white transition hover:border-gold-500" data-reveal style={{ "--d": i * 120 } as React.CSSProperties}>
@@ -165,12 +165,12 @@ export default function RedevelopmentPage() {
       <section id="feasibility" className="section-y grain bg-sand">
         <div className="container-x grid gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <SectionHeading align="left" title="Common" accent="questions" />
+            <SectionHeading align="left" title="Common" accent="Questions" />
             <Accordion items={faqs} className="mt-8" />
           </div>
           <div className="rounded-[2rem] bg-white p-6 shadow-[0_30px_80px_-40px_rgba(51,3,15,.35)] sm:p-10" data-reveal="right">
             <p className="font-script text-3xl text-gold-600">Let&apos;s meet</p>
-            <h2 className="text-3xl">Request a feasibility meeting</h2>
+            <h2 className="text-3xl">Request A Feasibility Meeting</h2>
             <p className="mt-1 mb-8 text-sm text-muted">
               Or call us on <a href={`tel:${site.phoneHref}`} className="font-medium text-brand-700">{site.phone}</a>
             </p>

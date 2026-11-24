@@ -78,7 +78,7 @@ export default function AboutPage() {
       <section className="grain relative bg-sand section-y">
         <Wave position="top" className="text-white" />
         <div className="container-x">
-          <SectionHeading title="What we" accent="promise" />
+          <SectionHeading title="What We" accent="Promise" />
           <div className="mt-12">
             <IconCards items={about.pillars} cols={4} tone="cream" />
           </div>
@@ -89,7 +89,7 @@ export default function AboutPage() {
       {/* Current projects strip */}
       <section className="section-y bg-white">
         <div className="container-x">
-          <SectionHeading title="Building" accent="now" subtitle={`${current.length} current projects across the Western line.`} />
+          <SectionHeading title="Building" accent="Now" subtitle={`${current.length} current projects across the Western line.`} />
           <ul className="no-scrollbar -mx-5 mt-12 flex snap-x gap-4 overflow-x-auto px-5 pb-4 lg:mx-0 lg:grid lg:grid-cols-7 lg:overflow-visible lg:px-0">
             {current.map((p, i) => (
               <li key={p.slug} className="w-44 shrink-0 snap-start lg:w-auto" data-reveal style={{ "--d": i * 70 } as React.CSSProperties}>
@@ -113,7 +113,7 @@ export default function AboutPage() {
       {/* Compliance */}
       <section className="section-y bg-cream">
         <div className="container-x">
-          <SectionHeading title="Built on" accent="trust" />
+          <SectionHeading title="Built On" accent="Trust" />
           <ul className="mx-auto mt-10 grid max-w-2xl gap-3 sm:grid-cols-2">
             {about.compliance.map((c, i) => (
               <li key={c.title} className="flex items-center gap-4 rounded-2xl bg-white p-5" data-reveal style={{ "--d": i * 80 } as React.CSSProperties}>

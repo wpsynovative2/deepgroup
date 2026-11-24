@@ -1,7 +1,7 @@
 {
   "slug": "deep-vaibhav",
   "name": "Deep Vaibhav",
-  "tagline": "Luxury 1, 2 & 3 BHK residences in a G+22 heritage-styled tower on Achole Road",
+  "tagline": "Luxury 1 & 2 BHK residences with Jodi options in a G+22 heritage-styled tower on Achole Road",
   "description": "Luxury is redefining the way you live: a magnificent G+22 tower with a heritage-styled elevation, wide balconies in every flat, a podium shopline and a rooftop terrace garden with a scenic lake view.",
   "category": "residential",
   "alsoListedIn": ["commercial"],
@@ -21,7 +21,7 @@
     "mapQuery": "Achole Road Nallasopara East 401209",
     "distanceFromStation": "900 m"
   },
-  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }, { "label": "3 BHK" }],
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }, { "label": "Jodi option" }],
   "price": { "display": "Price on request", "onRequest": true },
   "floors": "G+22",
   "highlights": ["G+22 magnificent tower", "Wide balconies in each flat", "Rooftop terrace garden with lake view"],
@@ -65,12 +65,12 @@
   "brochure": "/brochures/deep-vaibhav.pdf",
   "bookingPhone": "+91 70900 06655",
   "faqs": [
-    { "q": "What configurations are available at Deep Vaibhav?", "a": "1, 2 & 3 BHK residences in a G+22 tower." },
+    { "q": "What configurations are available at Deep Vaibhav?", "a": "1 & 2 BHK residences in a G+22 tower, with Jodi options available." },
     { "q": "How far is Deep Vaibhav from Nallasopara station?", "a": "About 900 m, on the main Achole Road." },
     { "q": "Which society is being redeveloped?", "a": "Paras CHS Ltd., Achole Road, Nallasopara East." }
   ],
   "seo": {
-    "title": "Deep Vaibhav: Luxury 1, 2 & 3 BHK Flats on Achole Road, Nalasopara East",
+    "title": "Deep Vaibhav: Luxury 1 & 2 BHK Flats with Jodi Options on Achole Road, Nalasopara East",
     "description": "G+22 heritage-styled tower 900 m from Nallasopara station with wide balconies, Italian marble flooring and a rooftop terrace garden with lake view."
   },
   "publishedAt": "2026-10-30",

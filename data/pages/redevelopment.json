@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "Redevelopment for",
-    "titleAccent": "housing societies",
+    "title": "Redevelopment For",
+    "titleAccent": "Housing Societies",
     "subtitle": "A new building, modern amenities and a secure future for every member.",
     "cta": "Request a feasibility meeting"
   },
@@ -17,13 +17,13 @@
   "receive": [
     { "value": "Clear Agreement", "label": "Transparent terms and commitments" },
     { "value": "Future-Ready Living", "label": "Designed for years ahead" },
-    { "value": "Proven Execution", "label": "25+ years of building experience" },
+    { "value": "Proven Execution", "label": "25+ years of experience & 30+ projects delivered" },
     { "value": "MahaRERA", "label": "Registered Projects" }
   ],
   "process": [
-    { "title": "Society resolution", "text": "General body passes resolution" },
+    { "title": "Society Resolution", "text": "General body passes resolution" },
     { "title": "Feasibility & PMC", "text": "Appoint PMC, study feasibility" },
-    { "title": "Developer selection", "text": "Tender and transparent selection" },
+    { "title": "Developer Selection", "text": "Tender and transparent selection" },
     { "title": "Agreement", "text": "Development agreement signed" },
     { "title": "Approvals", "text": "Plans approved by authorities" },
     { "title": "Construction", "text": "Members vacate, we build" },
@@ -33,7 +33,7 @@
   "transparency": [
     { "icon": "indian-rupee", "title": "No Surprise Costs", "text": "Clear financial terms from the start" },
     { "icon": "message-square", "title": "Transparent Progress", "text": "Regular updates at every stage" },
-    { "icon": "badge-check", "title": "MahaRERA registered", "text": "Every redevelopment registered" }
+    { "icon": "badge-check", "title": "MahaRERA Registered", "text": "Every redevelopment registered" }
   ],
   "completed": [
     { "name": "Deep Crown", "society": "Sai Nidhi CHS Ltd.", "location": "Chakradhar Nagar, Nalasopara West", "status": "Ongoing", "slug": "deep-crown", "image": "/images/projects/deep-crown/cover.jpg" },

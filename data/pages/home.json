@@ -18,7 +18,7 @@
   "categories": { "title": "What We Build" },
   "about": {
     "title": "More Than 27 Years",
-    "titleAccent": "and 30 Projects",
+    "titleAccent": "and 30+ Projects",
     "body": "We’ve shaped homes and communities across the western suburbs with our fundamentals remaining unchanged: build with purpose and commitment to create spaces people are proud of.",
     "points": [
       { "icon": "calendar-check", "label": "On-time delivery" },
@@ -35,7 +35,7 @@
     "titleAccent": "30+ Projects",
     "subtitle": "From the foundation to the next landmark, the journey continues",
     "stats": [
-      { "value": 29, "label": "Residential" },
+      { "value": 30, "label": "Residential" },
       { "value": 3, "label": "Industrial" }
     ]
   },

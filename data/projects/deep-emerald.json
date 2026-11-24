@@ -2,7 +2,7 @@
   "slug": "deep-emerald",
   "name": "Deep Emerald",
   "tagline": "Not just a home, a precious legacy",
-  "description": "Heritage-style residences near Patankar Road, Nalasopara West, a 5-minute walk from the station, with shops on the ground floor.",
+  "description": "Heritage-style 1 & 2 BHK residences near Patankar Road, Nalasopara West, a 5-minute walk from the station, with shops on the ground floor.",
   "category": "residential",
   "alsoListedIn": ["commercial"],
   "subType": "apartments",
@@ -18,7 +18,7 @@
     "mapQuery": "Patankar Road Nalasopara West",
     "distanceFromStation": "5 min walk"
   },
-  "units": [],
+  "units": [{ "label": "1 BHK" }, { "label": "2 BHK" }],
   "price": { "display": "Price on request", "onRequest": true },
   "highlights": ["5 min walk from station", "Rooftop star gazing point", "Shops on the ground floor"],
   "amenities": ["kids-play-area", "open-gym", "yoga-deck", "pergola", "star-gazing", "sitouts", "jogging-track", "indoor-games", "lift", "stack-parking", "power-backup", "shops"],
@@ -49,8 +49,8 @@
     { "q": "Where is Deep Emerald?", "a": "Near Patankar Road in Nalasopara West, about a 5-minute walk from Nallasopara station." }
   ],
   "seo": {
-    "title": "Deep Emerald: New Homes near Nallasopara Station (West)",
-    "description": "Heritage-style homes a 5-minute walk from Nallasopara station with rooftop open gym, yoga zone and star gazing point. Register your interest."
+    "title": "Deep Emerald: 1 & 2 BHK Flats near Nallasopara Station (West)",
+    "description": "Heritage-style 1 & 2 BHK homes a 5-minute walk from Nallasopara station with rooftop open gym, yoga zone and star gazing point. Register your interest."
   },
   "publishedAt": "2025-08-06",
   "updatedAt": "2026-09-29"

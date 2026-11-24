@@ -71,6 +71,30 @@
     "open": true
   },
   {
+    "slug": "sales-manager",
+    "title": "Sales Manager",
+    "department": "Sales",
+    "location": "Nallasopara East",
+    "type": "FULL_TIME",
+    "experience": "3–6 years",
+    "description": "Convert site visits into bookings for our residential projects in Nallasopara, Virar and Vasai.",
+    "responsibilities": [
+      "Meet buyers at site and present projects, floor plans and pricing",
+      "Follow up on site visits and close bookings",
+      "Work with presales and sourcing teams on the lead pipeline",
+      "Coordinate booking paperwork and handover to CRM"
+    ],
+    "requirements": [
+      "Graduate in any discipline",
+      "3+ years in real estate sales with a proven closing record",
+      "Good knowledge of the Western suburbs property market",
+      "Fluent in English, Hindi and Marathi"
+    ],
+    "postedAt": "2026-11-24",
+    "validThrough": "2027-01-31",
+    "open": true
+  },
+  {
     "slug": "digital-marketing-executive",
     "title": "Digital Marketing Executive",
     "department": "Marketing",

@@ -34,6 +34,7 @@
   "connectivity": [],
   "images": {
     "cover": { "src": "/images/projects/deep-sky/cover.jpg", "alt": "Deep Sky 23-storey residential tower, Vasai East" },
+    "elevation": { "src": "/images/projects/deep-sky/elevation.webp", "alt": "Deep Sky 23-storey residential tower, Vasai East" },
     "gallery": [
       { "src": "/images/projects/deep-sky/towers-sunset.jpg", "alt": "Deep Sky towers at sunset", "kind": "exterior" },
       { "src": "/images/projects/deep-sky/aerial.jpg", "alt": "Aerial view of Deep Sky towers", "kind": "exterior" }

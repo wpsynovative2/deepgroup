@@ -74,6 +74,11 @@ export const ProjectSchema = z
       .default([]),
     images: z.object({
       cover: ImageSchema,
+      /**
+       * Optional cut-out of the cover render (transparent PNG/WebP, sky removed). When set, the
+       * project hero shows it on the maroon background instead of the cover in a white frame.
+       */
+      elevation: ImageSchema.optional(),
       gallery: z.array(ImageSchema.extend({ kind: z.string().optional() })).default([]),
       floorPlans: z.array(ImageSchema.extend({ label: z.string() })).default([]),
       /**

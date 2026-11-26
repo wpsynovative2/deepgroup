@@ -93,19 +93,34 @@ export function ProjectHero({ p, stationName }: { p: Project; stationName: strin
           </div>
         </div>
 
-        {/* The render, whole, in an arch */}
+        {/* The render, whole, in an arch. A transparent cut-out sits straight on the maroon. */}
         <div className="relative mx-auto w-full max-w-[420px]">
           <div aria-hidden className="absolute -inset-4 arch border border-gold-400/40" />
-          <div className="hero-settle relative aspect-[3/4] overflow-hidden arch bg-white shadow-2xl shadow-black/40">
-            <FitImage
-              src={p.images.cover.src}
-              alt={p.images.cover.alt}
-              preload
-              loading="eager"
-              fetchPriority="high"
-              sizes="(min-width: 1024px) 420px, 90vw"
-            />
-          </div>
+          {p.images.elevation ? (
+            <div className="hero-settle relative aspect-[3/4] overflow-hidden arch">
+              <Image
+                src={p.images.elevation.src}
+                alt={p.images.elevation.alt}
+                fill
+                preload
+                loading="eager"
+                fetchPriority="high"
+                sizes="(min-width: 1024px) 420px, 90vw"
+                className="object-contain object-bottom drop-shadow-[0_20px_30px_rgba(0,0,0,0.45)]"
+              />
+            </div>
+          ) : (
+            <div className="hero-settle relative aspect-[3/4] overflow-hidden arch bg-white shadow-2xl shadow-black/40">
+              <FitImage
+                src={p.images.cover.src}
+                alt={p.images.cover.alt}
+                preload
+                loading="eager"
+                fetchPriority="high"
+                sizes="(min-width: 1024px) 420px, 90vw"
+              />
+            </div>
+          )}
           {p.rera?.[0]?.qr ? (
             <div className="absolute -bottom-6 -left-4 flex items-center gap-3 rounded-2xl bg-white p-2.5 pr-4 text-ink shadow-xl sm:-left-10">
               {/* eslint-disable-next-line @next/next/no-img-element */}

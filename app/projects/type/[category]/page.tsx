@@ -60,7 +60,7 @@ export default async function TypePage({ params }: PageProps<"/projects/type/[ca
       projects={getProjectSummaries()}
       stations={getActiveStations().map(({ slug, name, count }) => ({ slug, name, count }))}
       lock={{ category: c.slug }}
-      heroImage={here[0]?.images.cover}
+      heroImage={here[0]?.images.elevation ? { ...here[0].images.elevation, cutout: true } : here[0]?.images.cover}
       stats={[{ value: String(c.count), label: c.count === 1 ? "Project" : "Projects" }]}
       actions={
         c.chips ? (

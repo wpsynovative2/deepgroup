@@ -18,7 +18,7 @@ export default function ProjectsPage() {
       crumbs={[{ name: "Projects", href: "/projects" }]}
       projects={projects}
       stations={stations}
-      heroImage={{ src: "/images/projects/deep-sky/cover.jpg", alt: "" }}
+      heroImage={{ src: "/images/projects/deep-sky/elevation.webp", alt: "", cutout: true }}
       stats={[
         { value: String(stations.length), label: "Key Locations" },
         { value: "30+", label: "Projects Delivered" },

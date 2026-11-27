@@ -43,7 +43,20 @@ function Spotlight({ p }: { p: SpotlightProject }) {
   return (
     <article className="group relative grid overflow-hidden rounded-[2rem] border border-line bg-cream lg:grid-cols-[1.1fr_1fr]">
       <div className="relative aspect-[4/3] overflow-hidden lg:aspect-auto lg:min-h-[480px]">
-        <FitImage src={p.cover.src} alt={p.cover.alt} sizes="(min-width: 1024px) 640px, 100vw" className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]" />
+        {p.elevation ? (
+          // Transparent cut-out standing on the card's cream, with room above the roofline for the badge.
+          <div className="absolute inset-x-6 top-14 bottom-0">
+            <FitImage
+              cutout
+              src={p.elevation.src}
+              alt={p.elevation.alt}
+              sizes="(min-width: 1024px) 640px, 100vw"
+              className="origin-bottom drop-shadow-[0_18px_24px_rgba(74,14,30,0.22)] transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]"
+            />
+          </div>
+        ) : (
+          <FitImage src={p.cover.src} alt={p.cover.alt} sizes="(min-width: 1024px) 640px, 100vw" className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.04]" />
+        )}
         <div className="absolute top-5 left-5">
           <StatusBadge status={p.status} className="bg-white/90" />
         </div>

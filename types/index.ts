@@ -26,6 +26,8 @@ export type ProjectSummary = {
   completion: { percent: number; ocReceived: boolean } | null;
   rera: boolean;
   cover: { src: string; alt: string };
+  /** Transparent cut-out of the building; preferred over `cover` wherever the building is framed. */
+  elevation: { src: string; alt: string } | null;
   highlights: string[];
   updatedAt: string;
 };

@@ -50,7 +50,7 @@ export default async function StationPage({ params }: PageProps<"/projects/stati
       projects={getProjectSummaries()}
       stations={stations}
       lock={{ station: s.slug }}
-      heroImage={here[0]?.images.cover}
+      heroImage={here[0]?.images.elevation ? { ...here[0].images.elevation, cutout: true } : here[0]?.images.cover}
       stats={[
         { value: String(s.count), label: s.count === 1 ? "Project" : "Projects" },
         { value: `${s.line} line`, label: "Railway" },

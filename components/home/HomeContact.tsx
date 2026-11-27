@@ -14,8 +14,9 @@ export function HomeContact({ projects }: { projects: string[] }) {
       <LeafSprig className="absolute top-10 right-0 h-72 w-44 scale-x-[-1] text-gold-600/30" />
       <div className="container-x grid items-center gap-12 lg:grid-cols-[0.8fr_1.2fr]">
         <div className="relative hidden lg:block" data-reveal="left">
-          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden arch shadow-2xl shadow-brand-900/20">
-            <FitImage src="/images/projects/deep-crown/cover.jpg" alt="" sizes="384px" />
+          {/* Maroon behind the cut-out keeps the white contact lines readable, as on the project hero. */}
+          <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden arch bg-brand-900 bg-[radial-gradient(ellipse_at_50%_25%,var(--color-brand-700),transparent_70%)] shadow-2xl shadow-brand-900/20">
+            <FitImage cutout src="/images/projects/deep-crown/elevation.webp" alt="" sizes="384px" className="drop-shadow-[0_18px_24px_rgba(0,0,0,0.4)]" />
             <div className="absolute inset-0 bg-gradient-to-t from-brand-900/80 via-transparent" />
             <div className="absolute right-6 bottom-6 left-6 text-white">
               <p className="font-script text-4xl text-gold-400">Let&apos;s talk</p>

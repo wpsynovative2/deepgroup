@@ -19,8 +19,10 @@ export function AboutTeaser() {
           <div className="relative ml-auto aspect-[4/5] w-[78%] overflow-hidden arch shadow-2xl shadow-brand-900/15">
             <FitImage src="/images/about/towers-portrait.jpg" alt="Deep Group towers rising above the pool deck" sizes="(min-width: 1024px) 400px, 78vw" />
           </div>
-          <div className="absolute bottom-10 left-0 aspect-square w-[42%] overflow-hidden rounded-[1.5rem] border-[6px] border-white shadow-xl">
-            <FitImage src="/images/projects/ankur-grandeur/cover.jpg" alt="Ankur Grandeur tower, Nalasopara East" sizes="220px" />
+          <div className="absolute bottom-10 left-0 aspect-square w-[42%] overflow-hidden rounded-[1.5rem] border-[6px] border-white bg-cream shadow-xl">
+            <div className="absolute inset-x-2 top-3 bottom-0">
+              <FitImage cutout src="/images/projects/ankur-grandeur/elevation.webp" alt="Ankur Grandeur tower, Nalasopara East" sizes="220px" />
+            </div>
           </div>
           <div className="absolute top-10 left-[8%] rounded-2xl bg-brand-700 px-5 py-4 text-center text-white shadow-xl shadow-brand-900/30">
             <p className="font-display text-4xl leading-none text-gold-400">{about.yearsBadge}</p>

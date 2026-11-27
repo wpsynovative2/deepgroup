@@ -41,8 +41,8 @@ export function RedevelopmentTeaser() {
               <ArrowRight className="size-5" aria-hidden />
             </span>
             <figure className="relative">
-              <div className="relative aspect-[3/4] overflow-hidden arch-sm shadow-2xl shadow-brand-900/20">
-                <FitImage src="/images/projects/deep-crown/cover.jpg" alt="" sizes="300px" />
+              <div className="relative aspect-[3/4] overflow-hidden arch-sm bg-sand shadow-2xl shadow-brand-900/20">
+                <FitImage cutout src="/images/projects/deep-crown/elevation.webp" alt="" sizes="300px" />
               </div>
               <figcaption className="mt-2 text-center text-xs tracking-wide text-brand-700">Deep Crown, Sai Nidhi CHS</figcaption>
             </figure>

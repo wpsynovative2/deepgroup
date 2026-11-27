@@ -14,7 +14,7 @@ import { getPage, getPageSeo, getSite } from "@/lib/data/content";
 import { getAllProjects } from "@/lib/data/projects";
 import { buildMetadata } from "@/lib/seo/metadata";
 import { graph } from "@/lib/seo/jsonld";
-import { siteUrl } from "@/lib/utils";
+import { cn, siteUrl } from "@/lib/utils";
 
 export const metadata = buildMetadata({ ...getPageSeo("/about-us"), path: "/about-us" });
 
@@ -38,7 +38,7 @@ export default function AboutPage() {
         accent={about.hero.titleAccent}
         subtitle={about.hero.subtitle}
         crumbs={[{ name: "About us", href: "/about-us" }]}
-        image={{ src: "/images/projects/deep-crown/cover.jpg", alt: "" }}
+        image={{ src: "/images/projects/deep-crown/elevation.webp", alt: "", cutout: true }}
       />
 
       {/* Story + stats */}
@@ -46,11 +46,11 @@ export default function AboutPage() {
         <div className="container-x grid items-center gap-14 lg:grid-cols-2">
           <div className="relative" data-reveal="left">
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative aspect-[3/4] overflow-hidden arch-sm">
-                <FitImage src="/images/projects/deep-landmark/cover.jpg" alt="Deep Landmark, Gala Nagar, Nalasopara East" sizes="(min-width: 1024px) 270px, 45vw" />
+              <div className="relative aspect-[3/4] overflow-hidden arch-sm bg-cream">
+                <FitImage cutout src="/images/projects/deep-landmark/elevation.webp" alt="Deep Landmark, Gala Nagar, Nalasopara East" sizes="(min-width: 1024px) 270px, 45vw" />
               </div>
-              <div className="relative mt-12 aspect-[3/4] overflow-hidden arch-sm">
-                <FitImage src="/images/projects/deep-sky/cover.jpg" alt="Deep Sky, Yashwant Smart City, Vasai East" sizes="(min-width: 1024px) 270px, 45vw" />
+              <div className="relative mt-12 aspect-[3/4] overflow-hidden arch-sm bg-cream">
+                <FitImage cutout src="/images/projects/deep-sky/elevation.webp" alt="Deep Sky, Yashwant Smart City, Vasai East" sizes="(min-width: 1024px) 270px, 45vw" />
               </div>
             </div>
             <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-3xl bg-brand-700 px-7 py-5 text-center text-white shadow-2xl">
@@ -94,8 +94,12 @@ export default function AboutPage() {
             {current.map((p, i) => (
               <li key={p.slug} className="w-44 shrink-0 snap-start lg:w-auto" data-reveal style={{ "--d": i * 70 } as React.CSSProperties}>
                 <Link href={`/projects/${p.slug}`} className="group block">
-                  <span className="relative block aspect-[3/4] overflow-hidden arch-sm">
-                    <FitImage src={p.images.cover.src} alt={p.images.cover.alt} sizes="180px" className="transition duration-700 group-hover:scale-105" />
+                  <span className={cn("relative block aspect-[3/4] overflow-hidden arch-sm", p.images.elevation && "bg-cream")}>
+                    {p.images.elevation ? (
+                      <FitImage cutout src={p.images.elevation.src} alt={p.images.elevation.alt} sizes="180px" className="origin-bottom transition duration-700 group-hover:scale-105" />
+                    ) : (
+                      <FitImage src={p.images.cover.src} alt={p.images.cover.alt} sizes="180px" className="transition duration-700 group-hover:scale-105" />
+                    )}
                     <span className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent opacity-0 transition group-hover:opacity-100" />
                     <ArrowUpRight className="absolute right-3 bottom-3 size-5 text-white opacity-0 transition group-hover:opacity-100" aria-hidden />
                   </span>

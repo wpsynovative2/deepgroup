@@ -84,6 +84,7 @@ export function toSummary(p: Project): ProjectSummary {
     completion: p.completion ?? null,
     rera: Boolean(p.rera?.length),
     cover: p.images.cover,
+    elevation: p.images.elevation ?? null,
     highlights: p.highlights,
     updatedAt: p.updatedAt,
   };

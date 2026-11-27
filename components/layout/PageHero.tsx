@@ -4,14 +4,18 @@ import type { ReactNode } from "react";
 import { Breadcrumbs } from "./Breadcrumbs";
 import { LeafSprig } from "@/components/decor/Botanical";
 import { Ornament } from "@/components/decor/Ornament";
+import { cn } from "@/lib/utils";
 
 type Props = {
   title: string;
   accent?: string;
   subtitle?: string;
   crumbs: Array<{ name: string; href: string }>;
-  /** `fill: true` crops to fill the arch; use only for images with spare space around the building. */
-  image?: { src: string; alt: string; fill?: boolean };
+  /**
+   * `fill: true` crops to fill the arch; use only for images with spare space around the building.
+   * `cutout: true` is for transparent elevations: no frame or shadow box, the building stands on the cream.
+   */
+  image?: { src: string; alt: string; fill?: boolean; cutout?: boolean };
   children?: ReactNode;
   aside?: ReactNode;
 };
@@ -49,8 +53,10 @@ export function PageHero({ title, accent, subtitle, crumbs, image = { src: "/ima
         {aside ?? (
           <div className="relative mx-auto hidden w-full max-w-[380px] lg:block">
             <div className="absolute -inset-4 arch border border-gold-500/40" aria-hidden />
-            <div className="hero-settle relative aspect-[3/4] overflow-hidden arch shadow-2xl shadow-brand-900/20">
-              {image.fill ? (
+            <div className={cn("hero-settle relative aspect-[3/4] overflow-hidden arch", !image.cutout && "shadow-2xl shadow-brand-900/20")}>
+              {image.cutout ? (
+                <FitImage cutout src={image.src} alt={image.alt} preload loading="eager" sizes="380px" className="drop-shadow-[0_18px_24px_rgba(74,14,30,0.25)]" />
+              ) : image.fill ? (
                 <Image src={image.src} alt={image.alt} fill preload loading="eager" sizes="680px" quality={85} className="object-cover" />
               ) : (
                 <FitImage src={image.src} alt={image.alt} preload loading="eager" sizes="380px" />

@@ -15,7 +15,7 @@ type Props = {
   projects: ProjectSummary[];
   stations: StationOption[];
   lock?: { station?: string; category?: Category };
-  heroImage?: { src: string; alt: string };
+  heroImage?: { src: string; alt: string; cutout?: boolean };
   stats?: Array<{ value: string; label: string }>;
   /** Extra hero content under the stats, e.g. chips and a CTA. */
   actions?: ReactNode;

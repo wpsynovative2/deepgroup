@@ -5,7 +5,7 @@ import type { ProjectSummary } from "@/types";
 import { StatusBadge } from "@/components/ui/Badge";
 import { completionLabel } from "@/components/ui/Completion";
 import { CtaButton } from "@/components/ui/CtaButton";
-import { formatPrice } from "@/lib/utils";
+import { cn, formatPrice } from "@/lib/utils";
 
 const CAT_LABEL = { residential: "Residential", commercial: "Commercial", industrial: "Industrial" } as const;
 
@@ -16,15 +16,33 @@ export function ProjectCard({ p, priority, delay = 0, enquire = true }: { p: Pro
       style={{ "--d": delay } as React.CSSProperties}
       className="group relative flex h-full flex-col overflow-hidden rounded-[1.25rem] border border-line bg-white transition-[border-color,box-shadow,transform] duration-500 hover:-translate-y-1 hover:border-gold-500 hover:shadow-[0_30px_60px_-30px_rgba(101,7,39,.35)]"
     >
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <FitImage
-          src={p.cover.src}
-          alt={p.cover.alt}
-         
-          preload={priority}
-          sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-          className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
-        />
+      <div
+        className={cn(
+          "relative aspect-[4/3] overflow-hidden",
+          // The cut-out stands on maroon, like the project hero, so the white chips and price stay readable.
+          p.elevation && "bg-brand-900 bg-[radial-gradient(ellipse_at_50%_30%,var(--color-brand-700),transparent_70%)]",
+        )}
+      >
+        {p.elevation ? (
+          <div className="absolute inset-x-4 top-12 bottom-0">
+            <FitImage
+              cutout
+              src={p.elevation.src}
+              alt={p.elevation.alt}
+              preload={priority}
+              sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+              className="origin-bottom drop-shadow-[0_14px_18px_rgba(0,0,0,0.4)] transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
+            />
+          </div>
+        ) : (
+          <FitImage
+            src={p.cover.src}
+            alt={p.cover.alt}
+            preload={priority}
+            sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+            className="transition-transform duration-[1.2s] ease-out group-hover:scale-[1.06]"
+          />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-brand-900/40 via-transparent to-transparent opacity-80" />
         <div className="absolute top-4 left-4 flex gap-2">
           <StatusBadge status={p.status} className="bg-white/90" />

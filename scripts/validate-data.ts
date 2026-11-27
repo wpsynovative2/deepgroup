@@ -37,6 +37,7 @@ for (const file of fs.readdirSync(dir).filter((f) => f.endsWith(".json"))) {
     const pano = p.images.panorama;
     const imgs = [p.images.cover, ...p.images.gallery, ...p.images.floorPlans].map((i) => i.src);
     if (pano) imgs.push(pano.src, pano.srcSmall, pano.poster);
+    if (p.images.elevation) imgs.push(p.images.elevation.src);
     for (const src of imgs) if (!fs.existsSync(path.join(root, "public", src))) throw new Error(`missing image ${src}`);
     for (const r of p.rera ?? []) if (r.qr && !fs.existsSync(path.join(root, "public", r.qr))) throw new Error(`missing RERA QR ${r.qr}`);
     if (p.brochure && !fs.existsSync(path.join(root, "public", p.brochure))) throw new Error(`missing brochure ${p.brochure}`);

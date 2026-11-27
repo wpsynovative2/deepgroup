@@ -44,6 +44,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/ankur-grandeur/cover.jpg", "alt": "Ankur Grandeur tower with shops on the podium, Nalasopara East" },
+    "elevation": { "src": "/images/projects/ankur-grandeur/elevation.webp", "alt": "Ankur Grandeur tower with shops on the podium, Nalasopara East" },
     "gallery": [
       { "src": "/images/projects/ankur-grandeur/rooftop.jpg", "alt": "Ankur Grandeur rooftop amenities: kids play area, sky lawn, pergola and fitness area", "kind": "amenity" },
       { "src": "/images/projects/ankur-grandeur/layout.jpg", "alt": "Ankur Grandeur plot layout", "kind": "layout" },

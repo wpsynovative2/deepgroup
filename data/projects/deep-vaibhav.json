@@ -49,6 +49,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/deep-vaibhav/cover.jpg", "alt": "Deep Vaibhav G+22 tower elevation on Achole Road, Nalasopara East" },
+    "elevation": { "src": "/images/projects/deep-vaibhav/elevation.webp", "alt": "Deep Vaibhav G+22 heritage-styled tower on Achole Road, Nalasopara East" },
     "gallery": [
       { "src": "/images/projects/deep-vaibhav/elevation.jpg", "alt": "Deep Vaibhav magnificent heritage-styled elevation", "kind": "exterior" },
       { "src": "/images/projects/deep-vaibhav/elevation-street.jpg", "alt": "Deep Vaibhav tower and podium shopline from the main road", "kind": "exterior" },

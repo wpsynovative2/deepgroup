@@ -32,6 +32,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/sky-industrial-hub/cover.jpg", "alt": "Sky Industrial Hub building on NH 48" },
+    "elevation": { "src": "/images/projects/sky-industrial-hub/elevation.webp", "alt": "Sky Industrial Hub building on NH 48" },
     "gallery": [
       { "src": "/images/projects/sky-industrial-hub/gate.jpg", "alt": "Sky Industrial Hub entrance gate", "kind": "exterior" },
       { "src": "/images/projects/sky-industrial-hub/warehouse.jpg", "alt": "Sky Industrial Hub warehouse blocks", "kind": "exterior" }

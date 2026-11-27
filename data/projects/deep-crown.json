@@ -42,6 +42,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/deep-crown/cover.jpg", "alt": "Deep Crown tower in Chakradhar Nagar, Nalasopara West" },
+    "elevation": { "src": "/images/projects/deep-crown/elevation.webp", "alt": "Deep Crown tower in Chakradhar Nagar, Nalasopara West" },
     "gallery": [
       { "src": "/images/projects/deep-crown/amenities.jpg", "alt": "Deep Crown rooftop amenities and features", "kind": "amenity" },
       { "src": "/images/projects/deep-crown/specs.jpg", "alt": "Deep Crown specifications", "kind": "interior" }

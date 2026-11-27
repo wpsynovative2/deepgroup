@@ -38,6 +38,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/deep-emerald/cover.jpg", "alt": "Deep Emerald heritage-style building in Nalasopara West" },
+    "elevation": { "src": "/images/projects/deep-emerald/elevation.webp", "alt": "Deep Emerald heritage-style building in Nalasopara West" },
     "gallery": [
       { "src": "/images/projects/deep-emerald/rooftop.jpg", "alt": "Deep Emerald rooftop with kids' play area, yoga zone and star gazing point", "kind": "amenity" },
       { "src": "/images/projects/deep-emerald/features.jpg", "alt": "Deep Emerald home features", "kind": "interior" }

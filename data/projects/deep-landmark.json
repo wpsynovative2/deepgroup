@@ -37,6 +37,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/deep-landmark/cover.jpg", "alt": "Deep Landmark towers at Gala Nagar, Nalasopara East" },
+    "elevation": { "src": "/images/projects/deep-landmark/elevation.webp", "alt": "Deep Landmark towers at Gala Nagar, Nalasopara East" },
     "gallery": [
       { "src": "/images/projects/deep-landmark/lifestyle.jpg", "alt": "Deep Landmark lifestyle features: open gym, kids' play area, yoga zone", "kind": "amenity" },
       { "src": "/images/projects/deep-landmark/features.jpg", "alt": "Deep Landmark home features", "kind": "interior" }

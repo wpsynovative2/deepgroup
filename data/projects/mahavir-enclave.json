@@ -39,6 +39,7 @@
   ],
   "images": {
     "cover": { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Aerial view of Deep Mahavir Enclave with rooftop amenities, Vasai East" },
+    "elevation": { "src": "/images/projects/mahavir-enclave/elevation.webp", "alt": "Deep Mahavir Enclave residential tower in Evershine City, Vasai East" },
     "gallery": [
       { "src": "/images/projects/mahavir-enclave/lifestyle.jpg", "alt": "Deep Mahavir Enclave lifestyle features", "kind": "amenity" },
       { "src": "/images/projects/mahavir-enclave/cover.jpg", "alt": "Deep Mahavir Enclave aerial view", "kind": "exterior" }
